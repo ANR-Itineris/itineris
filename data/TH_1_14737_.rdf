@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:iso-thes="http://purl.org/iso25964/skos-thes#"
+	xmlns:opentheso="http://purl.org/umu/uneskos#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="https://ark.frantiq.fr/ark:/26678/pcrt1tSmMf0Tw8">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="de">Fibel</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">fibula</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">fibula</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">fibula</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">fíbula</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fibule</skos:prefLabel>
+	<skos:prefLabel xml:lang="ar">مشبك ذو مِفصلة</skos:prefLabel>
+	<skos:altLabel xml:lang="fr">broche</skos:altLabel>
+	<skos:altLabel xml:lang="en">brooch</skos:altLabel>
+	<skos:altLabel xml:lang="de">Brosche</skos:altLabel>
+	<skos:narrower rdf:resource="https://ark.frantiq.fr/ark:/26678/crtgr7oucN3aQ"/>
+	<skos:narrower rdf:resource="https://ark.frantiq.fr/ark:/26678/crtrWoW2YdSWy"/>
+	<skos:narrower rdf:resource="https://ark.frantiq.fr/ark:/26678/crtO3Qqwn66m4"/>
+	<skos:narrower rdf:resource="https://ark.frantiq.fr/ark:/26678/crtbw3cV8M590"/>
+	<skos:narrower rdf:resource="https://ark.frantiq.fr/ark:/26678/crtMjmlpKZYLS"/>
+	<skos:narrower rdf:resource="https://ark.frantiq.fr/ark:/26678/crt2U4mZzZOpu"/>
+	<skos:narrower rdf:resource="https://ark.frantiq.fr/ark:/26678/crtnSmqPnTnJs"/>
+	<skos:narrower rdf:resource="https://ark.frantiq.fr/ark:/26678/crtcSW0gSdY89"/>
+	<skos:narrower rdf:resource="https://ark.frantiq.fr/ark:/26678/crt4B3LBULlWG"/>
+	<skos:narrower rdf:resource="https://ark.frantiq.fr/ark:/26678/crtzthRQcZE07"/>
+	<skos:narrower rdf:resource="https://ark.frantiq.fr/ark:/26678/crt8c7KKTjeNj"/>
+	<skos:narrower rdf:resource="https://ark.frantiq.fr/ark:/26678/crtqzrGjFikgw"/>
+	<skos:narrower rdf:resource="https://ark.frantiq.fr/ark:/26678/crtudJz32nZBj"/>
+	<skos:broader rdf:resource="https://ark.frantiq.fr/ark:/26678/pcrtUqBbtbUOzF"/>
+	<skos:broader rdf:resource="https://ark.frantiq.fr/ark:/26678/pcrtkGrjdA3r24"/>
+	<skos:inScheme rdf:resource="https://ark.frantiq.fr/ark:/TH_1"/>
+	<opentheso:memberOf rdf:resource="https://ark.frantiq.fr/ark:/26678/pcrtnbDLi2FkAj"/>
+	<skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q324926"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-02-08</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-01</dcterms:modified>
+	<dcterms:identifier>14737</dcterms:identifier>
+	<dcterms:description>17525##16131##13571##14737</dcterms:description>
+	<dcterms:description>17525##14989##155895##155896##14737</dcterms:description>
+	<skos:definition xml:lang="fr">Agrafe ou broche articulée par un ressort ou une charnière et dont la pointe (ardillon) se fixait à l'extrémité d'un arc de forme variée, servant à attacher les vêtements flottants et non cousus. (Musée d'Argentomagus)</skos:definition>
+</rdf:Description>
+
+</rdf:RDF>

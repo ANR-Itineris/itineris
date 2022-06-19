@@ -1,0 +1,44 @@
+"id"	"label"	"color"	"title"	"font.size"	"font.color"	"image"	"shape"	"size"	"group"
+"WP1"	"WP1"	"#ea5c00"	"WP1 Archaeometric analysis"	15	"black"	""	"box"	30	"wkp"
+"WP2"	"WP2"	"#475c7d"	"WP2 Archaeological & Technological analysis"	15	"black"	""	"box"	30	"wkp"
+"WP3"	"WP3"	"#7e9f15"	"WP3 Datamanagement & Modeling"	15	"black"	""	"box"	30	"wkp"
+"T.2A,ICP-MS analysis"	"T.2A
+ICP-MS analysis"	"#808080"	"Inductively coupled plasma mass spectrometry (ICP-MS)"	15	"black"	""	"text"	8	"tsk"
+"T.2B,Isotopic analysis"	"T.2B
+Isotopic analysis"	"#808080"	"<i>Analyses isotopiques</i>"	15	"black"	""	"text"	8	"tsk"
+"T.2B,SEM analysis"	"T.2B
+SEM analysis"	"#808080"	"Scanning electron microscope (SEM)"	15	"black"	""	"text"	8	"tsk"
+"T.3,2D/3D X-r imagery"	"T.3
+2D/3D X-r imagery"	"#808080"	"X-ray fluorescence (XRF)"	15	"black"	""	"text"	8	"tsk"
+"T.4,Inventory/Drawing"	"T.4
+Inventory/Drawing"	"#808080"	"<i>Inventaire, dessins</i>"	15	"black"	""	"text"	8	"tsk"
+"T.4,Scan 3D & RTI"	"T.4
+Scan 3D & RTI"	"#808080"	"<i>Scanner 3D</i>"	15	"black"	""	"text"	8	"tsk"
+"T.4,Microscopic analysis"	"T.4
+Microscopic analysis"	"#808080"	"<i>Analyses microscopiques</i>"	15	"black"	""	"text"	8	"tsk"
+"T.5A,Web Database"	"T.5A
+Web Database"	"#808080"	"<i>Base de donnes web</i>"	15	"black"	""	"text"	8	"tsk"
+"T.5B,Modelling"	"T.5B
+Modelling"	"#808080"	"<i>Modlisation</i>"	15	"black"	""	"text"	8	"tsk"
+"CNRS-PSL AOROC,UMR8546"	""	"#0f0f0f"	"<a href='http://www.archeo.ens.fr/'><b>CNRS-PSL AOrOc UMR8546</b></a><br>
+             Veronica CICOLANI<a href="https://orcid.org/0000-0003-0326-299X"><img alt="Qries" src="https://raw.githubusercontent.com/zoometh/itineris/main/www/varia/orcid.png" width="15"></a><br>
+             Julien ZURBACH<a href="https://github.com/zoometh/itineris/blob/master/www/404miss.md"><img alt="Qries" src="https://raw.githubusercontent.com/zoometh/itineris/main/www/varia/orcid.png" width="15"></a><br>
+             Agns TRICOCHE<a href="https://github.com/zoometh/itineris/blob/master/www/404miss.md"><img alt="Qries" src="https://raw.githubusercontent.com/zoometh/itineris/main/www/varia/orcid.png" width="15"></a><br>
+             Jean-Baptiste HOUAL<a href="https://github.com/zoometh/itineris/blob/master/www/404miss.md"><img alt="Qries" src="https://raw.githubusercontent.com/zoometh/itineris/main/www/varia/orcid.png" width="15"></a><br>
+             Frdrique MARCHAND-BEAULIEU<a href="https://github.com/zoometh/itineris/blob/master/www/404miss.md"><img alt="Qries" src="https://raw.githubusercontent.com/zoometh/itineris/main/www/varia/orcid.png" width="15"></a>"	15	"red"	"https://raw.githubusercontent.com/zoometh/itineris/main/www/inst/aoroc.png"	"image"	25	"wkp"
+"C2RMF Louvre"	""	"#0f0f0f"	"<a href='https://c2rmf.fr/'><b>C2RMF Louvre</b></a><br>
+             Benot MILLE<a href="https://orcid.org/0000-0003-0151-265X"><img alt="Qries" src="https://raw.githubusercontent.com/zoometh/itineris/main/www/varia/orcid.png"  width="15"><br>
+             Elsa LAMBERT<a href="https://github.com/zoometh/itineris/blob/master/www/404miss.md"><img alt="Qries" src="https://raw.githubusercontent.com/zoometh/itineris/main/www/varia/orcid.png" width="15"></a>"	15	"red"	"https://raw.githubusercontent.com/zoometh/itineris/main/www/inst/c2rmf.png"	"image"	25	"wkp"
+"Muse d'Archologie,nationale"	""	"#0f0f0f"	"<a href='https://musee-archeologienationale.fr/'><b>Muse d'Archologie nationale</b></a><br>
+             Christine LORRE<a href="https://github.com/zoometh/itineris/blob/master/www/404miss.md"><img alt="Qries" src="https://raw.githubusercontent.com/zoometh/itineris/main/www/varia/orcid.png" width="15"></a>"	15	"red"	"https://raw.githubusercontent.com/zoometh/itineris/main/www/inst/man.png"	"image"	25	"wkp"
+"University of Padua"	""	"#0f0f0f"	"<a href='https://www.unipd.it/en/'><b>University of Padua<b></a><br>
+             Gilberto ARTIOLI<a href="https://orcid.org/0000-0002-8693-7392"><img alt="Qries" src="https://raw.githubusercontent.com/zoometh/itineris/main/www/varia/orcid.png"  width="15"></a><br>
+             Ivana ANGELINI<a href="https://github.com/zoometh/itineris/blob/master/www/404miss.md"><img alt="Qries" src="https://raw.githubusercontent.com/zoometh/itineris/main/www/varia/orcid.png" width="15"></a>"	15	"red"	"https://raw.githubusercontent.com/zoometh/itineris/main/www/inst/uni-padua.png"	"image"	25	"wkp"
+"University of Turin"	""	"#0f0f0f"	"<a href='https://en.unito.it/'><b>University of Turin<b></a><br>
+             Alessandro LO GIUDICE<a href="https://orcid.org/0000-0003-4753-3165"><img alt="Qries" src="https://raw.githubusercontent.com/zoometh/itineris/main/www/varia/orcid.png"  width="15"></a><br>
+             Alessandro RE<a href="https://orcid.org/0000-0001-9952-5488"><img alt="Qries" src="https://raw.githubusercontent.com/zoometh/itineris/main/www/varia/orcid.png"  width="15"></a><br>
+             Eliano DIANA<a href="https://github.com/zoometh/itineris/blob/master/www/404miss.md"><img alt="Qries" src="https://raw.githubusercontent.com/zoometh/itineris/main/www/varia/orcid.png" width="15"></a>"	15	"red"	"https://raw.githubusercontent.com/zoometh/itineris/main/www/inst/uni-torino.png"	"image"	25	"wkp"
+"Musei Reali of Turin"	""	"#0f0f0f"	"<a href='https://www.museireali.beniculturali.it/'><b>Musei Reali of Turin</b></a><br>
+             Elisa PEREGO<a href="https://github.com/zoometh/itineris/blob/master/www/404miss.md"><img alt="Qries" src="https://raw.githubusercontent.com/zoometh/itineris/main/www/varia/orcid.png" width="15"></a>"	15	"red"	"https://raw.githubusercontent.com/zoometh/itineris/main/www/inst/musei-torino.png"	"image"	25	"wkp"
+"Musei Civici of Reggio Emilia"	""	"#0f0f0f"	"<a href='https://www.musei.re.it/'><b>Musei Civici of Reggio Emilia</b></a><br>
+             Giada PELLEGRINI<a href="https://github.com/zoometh/itineris/blob/master/www/404miss.md"><img alt="Qries" src="https://raw.githubusercontent.com/zoometh/itineris/main/www/varia/orcid.png" width="15"></a>"	15	"red"	"https://raw.githubusercontent.com/zoometh/itineris/main/www/inst/musei-reggio.png"	"image"	25	"wkp"

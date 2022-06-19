@@ -1,0 +1,15 @@
+{
+  "@graph": [
+    {
+      "@id": "https://github.com/zoometh/itineris/tree/main/castello\\u0020di\\u0020annone",
+      "https://github.com/zoometh/itineris/tree/main/832": "CdA Viarengo  CdA M3",
+      "https://github.com/zoometh/itineris/tree/main/881.38815625": "CdA Viarengo  CdA M1",
+      "https://github.com/zoometh/itineris/tree/main/903.588728461539": "CdA Viarengo Cum 56 CdA N2"
+    },
+    {
+      "@id": "https://github.com/zoometh/itineris/tree/main/villa\\u0020del\\u0020foro",
+      "https://github.com/zoometh/itineris/tree/main/589": "VF SP 12 VF M1",
+      "https://github.com/zoometh/itineris/tree/main/773": "VF E8/1000 VF M5"
+    }
+  ]
+}

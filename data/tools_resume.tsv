@@ -1,0 +1,23 @@
+WP	Task	tool name	description	output
+WP*	T6	GitHub account to converge actions	Web platform for source code management (versioning, Git, continuous integration, etc.)	plain text files, apps, etc.
+WP*	T6	GitLab account to share apps and tools	Web platform for software development (versioning, Git, continuous integration, etc.)	plain text files, apps, etc.
+WP*	T6	Website for scholars and large public	Web Content Management System (eg. WordPress, Omeka-S, Django)	URL
+WP2	T2.A	LA-ICP-MS	LA-ICP-MS (Laser Ablation Inductively Coupled Plasma Mass Spectrometry) or ICP-MS (Inductively Coupled Plasma Mass Spectrometry) is a powerful analytical technology that enables highly sensitive elemental and isotopic analysis to be performed directly on solid samples	XXX
+WP2	T2.A	Agilent 8900 ICP-MS-MS	LA-ICP-MS (Laser Ablation Inductively Coupled Plasma Mass Spectrometry) or ICP-MS (Inductively Coupled Plasma Mass Spectrometry) is a powerful analytical technology that enables highly sensitive elemental and isotopic analysis to be performed directly on solid samples	XXX
+WP2	T2.B	Thermo Scientific Neptune MC-ICP-MS	MC-ICP-MS (Multicollector Inductively Coupled Plasma Mass Spectrometry)	XXX
+WP2	T2.B	SEM	Scanning Electron Microscopy (SEM)	XXX
+WP2	T2.B	EDS	Energy Dispersive Spectrometer (EDS)	XXX
+WP2	T2.B	Nikon Eclipse ME600 microscope	Optical microscope	XXX
+WP2	T2.C	Raman	Raman spectrography or spectroscopy	XXX
+WP2	T2.C	IRTF	Fourier Transform InfraRed spectroscopy	XXX
+WP2	T2.C	XRD	X-Ray Difraction	XXX
+WP2	T3	Radiography	X-Ray Radiography	XXX
+WP2	T4	Aicon SmartScan with OptoCat	3D Structured ligth scanning with OptoCat software	.stl, .ply
+WP2	T4	PhotoScan Pro and 3DReshaper	3D photogrammetry and 3D point processing	.ply, .u3d, .x3d
+WP2	T4	Digital Camera	Digital Camera	.tiff, .raw, EXIF, XMP
+WP3	T5.B	Iso-standards	ISO standards (Institution Organization for Standardization) for data description (eg. ISO 25178, TEI, Dublin Core, CIDOC-CRM, etc.)	.json, RDF, etc.
+WP3	T5.B	Programming languages (eg. R, Python)	Open-source scripting languages for software interoperability and analysis routines	.R, .pyw, .json, etc.
+WP3	T5.B	Open-source software (eg. QGIS)	Open-source sofwares for software interoperability	.geojson, .shp, .qgs, etc.
+WP3	T5.B	Active reporting (eg. Rmarkdown, Jupyter)	Authoring framework for data science and data driven document	.Rmd, .json, .html
+WP3	T5.B	Interactive web visualization (eg. RShiny)	Shiny and Plotly interactive web apps for data science	.R, .json, .html
+WP3	T5.B	Open-access repository	Open-access and restricted-access to Data Warehouse (eg. Huma-Num ShareDocs, GitLab)	 URL, DOI (plain text files, apps, etc.)

@@ -1,0 +1,111 @@
+---
+title: "3Ddev"
+# author: "Thomas Huet"
+# date: "10/9/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE, echo=FALSE, results="asis", warning = F}
+# knitr::opts_chunk$set(echo = TRUE)
+# options(rgl.useNULL = TRUE) # Suppress the separate window
+source("setup.R")
+setupKnitr(autoprint = TRUE)
+set.seed(123)
+library(rgl)
+library(MASS)
+library(ks)
+library(misc3d)
+library(knitr)
+library(kableExtra)
+library(dplyr)
+library(DT)
+library(openxlsx)
+
+# isotop dataset
+path.data <- "C:/Rprojects/_coll/3dkernel/"
+df.isotop <- read.xlsx(paste0(path.data, "3dkernel.xlsx"))
+xyz.isotop <- c("var1", "var2", "var3")
+color.isotop <- c("color")
+
+# test
+xyz.iris <- c("Sepal.Length", "Sepal.Width", "Petal.Length")
+color.iris <- c("color")
+n.sample.iris <- 20
+iris.samp <- iris[sample(nrow(iris), n.sample.iris), c("Species", xyz.iris)]
+```
+
+Workflow:
+
+* step 1: [Textured model](#text3d)
+
+* step 2: [Sampling locations](#pts3d)
+
+* step 3: [3D Kernel Density Estimation](#kde3d)
+
+* step 4: [Fusion](#ana3d)
+
+---
+
+## Textured model {#text3d}
+> Test model
+
+Textured models coming from photogrammetry, lasergrammetry, etc. Displayed in the dans 3DHOP framework and hosted in GitHub: 
+
+* [fibule](https://zoometh.github.io/3DHOP/minimal/fibule.html)
+
+## Sampling locations {#pts3d}
+> Observed dataset
+
+3D values of the `df.isotop` dataframe (`r nrow(df.isotop)` individual). Colors are base on the `object` variable. Dataset:
+
+```{r isotop-colors, echo = FALSE}
+u.objects <- unique(df.isotop$object)
+df.colors <- data.frame(object = u.objects,
+                        color = rainbow(length(u.objects)),
+                        stringsAsFactors = F
+)
+isotop.color <- merge(df.isotop, df.colors, by = "object")
+datatable(
+  isotop.color[, c(1:7)],
+  rownames = FALSE,
+  width = "50%",
+  editable = FALSE) %>%
+  formatStyle("object",
+    backgroundColor = styleEqual(df.colors$object, 
+                                 toupper(df.colors$color))
+  )
+```
+
+## Interactive 3D visualisation {#kde3d}
+
+RGL 3D window:
+
+```{r rgl-test}
+with(isotop.color, 
+     plot3d(var1, var2, var3, 
+            type="s",
+            radius=.1,
+            col = color))
+```
+
+
+## Kernel Density Estimation {#kde3d}
+
+3D polygons for the isotopic values
+
+```{r kde-obs, echo = T}
+# options(rgl.useNULL = TRUE) # avoid the popup RGL device
+x <- isotop.color[ , c(xyz.isotop, color.isotop)]
+H.pi <- Hpi(x[ , xyz.isotop], pilot = "samse")
+fhat <- kde(x[ , xyz.isotop], H = H.pi, compute.cont = TRUE)  
+plot(fhat, drawpoints = TRUE)
+```
+
+
+## Fusion {#ana3d}
+
+TODO: Fusion des donnees vectorielles points/ploygones 3D et du modele texture
+
+
+
+

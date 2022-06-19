@@ -1,0 +1,505 @@
+```{r, echo=FALSE}
+url.root <- "https://raw.githubusercontent.com/zoometh/itineris/main/www/"
+htmltools::img(src = paste0(url.root, "logo.png"), 
+               alt = 'logo', 
+               width = '250px',
+               style = 'position:absolute; top:0; right:0; padding:10px;')
+```
+
+
+<style>
+.html-widget {
+margin: auto;
+}
+</style>
+
+```{r setup, include=FALSE}
+# knitr::opts_chunk$set(echo = FALSE, fig.width = 19, fig.height = 14)
+library(kableExtra) 
+library(dplyr)
+library(knitr)
+library(shiny)
+library(visNetwork)
+library(stringi)
+library(stringr)
+library(rdflib)
+library(openxlsx)
+library(rgdal)
+library(rgeos)
+library(dismo)
+library(deldir)
+library(sp)
+library(maptools)
+library(sf)
+library(raster)
+library(leaflet)
+library(rdflib)
+
+text.size <- 15
+
+# informations résumés
+local.dir <- "C:/Users/supernova/Dropbox/My PC (supernova-pc)/Documents/itineris/"
+data.base <- 'https://raw.github.com/zoometh/itineris/master/data/'
+url.data.res <- paste0(data.base, 'data_resume.tsv')
+url.tools.res <- paste0(data.base, 'tools_resume.tsv')
+url.isos.res <- paste0(data.base, 'isos_resume.tsv')
+url.mbr_nodes.res <- paste0(data.base, 'mbr_nodes_resume.tsv')
+url.mbr_edges.res <- paste0(data.base, 'mbr_edges_resume.tsv')
+url.meta.res <- paste0(data.base, 'meta_resume.tsv')
+
+data.res <- read.table(url.data.res, header = T, sep = "\t", row.names = NULL)
+n.sites <- sum(data.res$nb.sites)
+n.obj <- sum(data.res$nb.obj)
+
+
+base <- "https://github.com/zoometh/itineris/tree/main/"
+inst.logo.root <- "https://raw.githubusercontent.com/zoometh/itineris/main/www/inst/"
+```
+
+
+```{r info-gen, echo = F}
+df.info <- data.frame("Acronyme" = "Itineris",
+                      "Code décision" = "AAPG2021",
+                      "Titre" = "Italic metalwork TechnIques during the Early IroN AgE. Rethinking cultural InteractionS",
+                      "Coordinateur" = "Veronica Cicolani",
+                      "Affiliation" = "AOROC",
+                      "Contact PGD" = "Agnès Tricoche, Thomas Huet",
+                      "Version du PGD" = 1,
+                      "Date" = format(Sys.time(), '%d %B %Y'),
+                      stringsAsFactors = F
+)
+df.info.t <- t(df.info)
+kable(df.info.t,"html",
+      caption = "Informations générales") %>%
+  kable_styling(full_width = FALSE,
+                position = "left",
+                font_size = 12)
+```
+
+# Plan de gestion des données {#pgd}
+
+Le plan de gestion des données (PGD, *data management plan*) est préparé dans le carde du [*work package* 3 (WP3](#WP3) T.5B) et partagé par l'ensemble des [membres](#part) de l'ANR Itineris. Il suit les recommandations du [COmité pour la Science Ouverte (CoSo)](https://www.ouvrirlascience.fr/the-committee-for-open-science/), de [OPIDoR](https://dmp.opidor.fr/public_templates) et les principes du FAIR (Facile à retrouver, Accessible, Interopérable, Réutilisable). La gestion des données du projet s'appuie sur les services d'[Huma-Num](#humanum), *`r stri_rand_lipsum(1)`*
+
+```{r dmp, echo=F, warning= F, fig.align='center', fig.height= 7, fig.width= 7, fig.cap="Plan de gestion des données du projet Itineris"}
+dmp.logo.root <- "https://raw.githubusercontent.com/zoometh/itineris/main/www/dmp/"
+dmg.steps <- c("Collecte et\nRéutilisation", 
+               "Description",
+               "Stockage",
+               "Analyses",
+               "Archivage",
+               "Publication")
+dmg.steps.url <- c("#wp3.step.collec",
+                   "#wp3.step.describ",
+                   "#wp3.bdweb",
+                   "#wp3.step.anal",
+                   "#wp3.step.archiv",
+                   "#wp3.step.public")
+dmg.steps.tit <- paste0("<a href='",dmg.steps.url,"'>",dmg.steps,"</a>")
+name.im <- c(paste0(dmp.logo.root, "data_create.png"),
+             paste0(dmp.logo.root, "data_tag.png"),
+             paste0(dmp.logo.root, "data_store.png"),
+             paste0(dmp.logo.root, "data_process.png"),
+             paste0(dmp.logo.root, "data_archive.png"),
+             paste0(dmp.logo.root, "data_publish.png"))
+n.dmg.steps <- length(dmg.steps)
+nodes <- data.frame(id=dmg.steps,
+                    label = dmg.steps,
+                    # label = paste0("[",dmg.steps,"](",dmg.steps.url,")"),
+                    color = c(rep("#808080", n.dmg.steps)),
+                    title = dmg.steps.tit,
+                    font.size = rep(15, n.dmg.steps),
+                    font.color = c(rep("black", n.dmg.steps)),
+                    image = name.im,
+                    shape = c(rep("image", n.dmg.steps)),
+                    size = c(rep(24, n.dmg.steps)),
+                    group = c(rep("dmp", n.dmg.steps))
+)
+a <- data.frame(from = dmg.steps[1:length(dmg.steps)-1],
+                to = dmg.steps[2:length(dmg.steps)])
+b <- data.frame(from = dmg.steps[length(dmg.steps)],
+                to = dmg.steps[1])
+edges <- rbind(a,b)
+visNetwork(nodes, edges, 
+           width = "600px", height = "600px") %>%
+  visEdges(shadow = TRUE,
+           smooth = TRUE,
+           arrows =list(to = list(enabled = TRUE, 
+                                  scaleFactor = 1)),
+           color = list(color = "lightblue", highlight = "red"))
+```
+
+Ce document [R](https://www.r-project.org/) + [Markdown](https://rmarkdown.rstudio.com/), déposé sur [GitHub](https://zoometh.github.io/itineris/), a été produit en open-source. 
+
+## Collecte et Réutilisation {#wp3.step.collec}
+
+L'étude portera sur quelques **<span style="color:darkgrey">`r n.obj`</span>** objets en alliage de cuivre provenant de **<span style="color:darkgrey">`r n.sites`</span>** sites archéologiques. Parallèlement, une révision des corpus déjà publiés sera opérée. 
+
+### Provenance
+
+*`r stri_rand_lipsum(1)`*
+
+### Données réutilisées
+
+*`r stri_rand_lipsum(1)`*
+
+### Données inédites
+
+*`r stri_rand_lipsum(1)`*
+
+### Volumes
+
+*`r stri_rand_lipsum(1)`*
+
+
+### Contrôle de la qualité
+
+*`r stri_rand_lipsum(1)`*
+
+### Propriété intellectuelle
+
+*`r stri_rand_lipsum(1)`*
+
+## Description {#wp3.step.describ}
+
+Les données et métadonnées seront décrites selon les ISO-standards, des thésaurus (i.e., vocabulaires contrôlés, *shared vocabularies*) déjà existants et par de nouveaux thésaurus. Ci-dessous nous établissons une liste de référentiels possibles.
+
+
+```{r isosdf, echo=F}
+
+isos.res <- read.table(url.isos.res, header = T, sep = "\t", row.names = NULL)
+kable(isos.res,"html",
+      row.names = F,
+      caption = "Iso-standards ou standards (ISO) utilisés") %>%
+  collapse_rows() %>%
+  kable_styling(full_width = FALSE,
+                position = "center",
+                font_size=12)
+```
+
+Les données seront étudiées par des équipes françaises et italiennes. Par ailleurs, l'intéropérabilité des données requiert l'usage de l'anglais. Pour faciliciter les échanges, une table de correspondance entre ces trois langue va être mise en place et alimentée par les différentes équipes comme par exemple, [ce fichier XLSX](https://github.com/zoometh/itineris/blob/main/fra-ita-eng/lexicon.xlsx?raw=true) déposé sur le [GitHub du projet Itineris](https://github.com/zoometh/itineris/tree/main/fra-ita-eng), et lu ici à la volée par R
+
+```{r lexicon, echo = F, fig.cap = ""}
+lexicon <- rio::import('https://github.com/zoometh/itineris/blob/main/fra-ita-eng/lexicon.xlsx?raw=true')
+kable(head(lexicon, 6),"html",
+      row.names = F,
+      caption = "Table de correspondance lingistique des termes") %>%
+  kable_styling(full_width = FALSE,
+                position = "center",
+                font_size=12)
+```
+
+### Structuration
+
+Contrairement aux descripteurs et aux formats que nous cherchons à faire converger sur des iso-standards et des formats libres, le choix de la structuration des données (eg. tableurs Excel, hiérarchie des dossiers, etc.) sera laissé au choix des spécialistes afin qu'ils s'économisent du temps en utilisant des méthodes qu'ils maitrisent déjà. L'insertion de ces données en base de données FileMaker se fera par un ensemble de procédures en R ou Python permettant de faire le *mappage* à la volée de ces données
+
+### Convention de nommage {#wp3.step.describ.name}
+
+L'ANR Itineris adopte une démarche orientée objet en adoptant un identifiant unique pour chaque objet. Cet identifiant qui sera étudié sous la forme: <span style="color:blue">code ANR</span> (3 *digits*), <span style="color:red">numéro d'objet</span> (5 *digits*). Par exemple, l'objet 1 sera identifié par:
+
+<center>
+
+<span style="color:blue">ITI</span><span style="color:red">00001</span>
+
+</center>
+
+C'est cet identifiant qui permettra de mettre en lien l'ensemble des analyses effectuées (typologiques, élémentaires, etc.). 
+
+### Métadonnées objets
+
+A chacun des objets seront associées ces métadonnées:
+
+```{r meta, echo = F}
+# meta.res <- read.table("C:/Users/supernova/Dropbox/My PC (supernova-pc)/Documents/itineris/data/meta_resume.tsv", sep = "\t", header = TRUE)
+# # write.table(meta.res, "meta.tsv", sep = "\t")
+# View(meta.res)
+meta.res <- read.table(url.meta.res, header = T, sep = "\t", row.names = NULL, fill = T)
+meta.res.t <- t(meta.res)
+kable(meta.res,"html",
+      caption = "Métadonnées attachées aux objets") %>%
+  collapse_rows() %>%
+  kable_styling(full_width = FALSE,
+                position = "left",
+                font_size = 12)
+```
+
+*`r stri_rand_lipsum(1)`*
+
+## Stockage {#wp3.step.stock}
+
+Le stockage des données se fera sur une base de données FileMaker [WP3](#WP3) T.5A consultable en ligne via un navigateur web (technologie WebDirect). Elle sera  hébergée sur les serveurs d’Huma-Num et référencée sur la grille Huma-Num. La Huma-Num héberge déjà de nombreux projets numériques développés par le laboratoire AOROC. Cette structure de données va permettre l'implémentation d'une saisie mult-utilisateurs, la pérennité du stockage et faciliter l'interfaçage avec des données de recherche déjà implémentées par la coordinatrice du projet (VC), le *gazetteer* [Archeolocalis](https://archeolocalis.chronocarto.eu/?zlang=fr), la base de données [BaseFer](https://basefer.chronocarto.eu/). 
+
+
+## Analyses {#wp3.step.anal}
+
+Les outils et les méthodes employées seront:
+
+```{r methods-tools, echo = F}
+tools.res <- read.table(url.tools.res, header = T, sep = "\t", row.names = NULL)
+tools.res$WP <- str_replace(tools.res$WP, "WP1", "[WP1](#WP1)")
+tools.res$WP <- str_replace(tools.res$WP, "WP2", "[WP2](#WP2)")
+tools.res$WP <- str_replace(tools.res$WP, "WP3", "[WP3](#WP3)")
+tools.res$output <- str_replace(tools.res$output, "geojson", "[geojson](#Fgeojson)")
+tools.res$output <- str_replace(tools.res$output, ".json", "[.json](#Fjson)")
+tools.res$output <- str_replace(tools.res$output, ".ply", "[.ply](#Fply)")
+tools.res$output <- str_replace(tools.res$output, "RDF", "[RDF](#Frdf)")
+tools.res$output <- str_replace(tools.res$output, ".shp", "[.shp](#Fshp)")
+tools.res$output <- str_replace(tools.res$output, ".txt", "[.txt](#Fplaintext)")
+tools.res$output <- str_replace(tools.res$output, ".csv", "[.csv](#Fplaintext)")
+tools.res$output <- str_replace(tools.res$output, ".tsv", "[.tsv](#Fplaintext)")
+tools.res$output <- str_replace(tools.res$output, ".u3d", "[.u3d](#Fu3d)")
+tools.res$output <- str_replace(tools.res$output, ".x3d", "[.x3d](#Fx3d)")
+tools.res$output <- str_replace(tools.res$output, ".wkt", "[.wkt](#Fplaintext)")
+tools.res$output <- str_replace(tools.res$output, "plain text", "[plain text](#Fplaintext)")
+tools.res$output <- str_replace(tools.res$output, "EXIF", "[EXIF](#MExif)")
+tools.res$output <- str_replace(tools.res$output, "XMP", "[XMP](#MXmp)")
+tools.res$output <- str_replace(tools.res$output, "CIDOC-CRM", "[CIDOC-CRM](https://www.iso.org/standard/34424.html)")
+tools.res$output <- str_replace(tools.res$output, "Dublin Core", "[Dublin Core](https://www.iso.org/standard/71339.html)")
+kable(tools.res,"html",
+      row.names = F,
+      caption = "Outils et méthodes") %>%
+  collapse_rows() %>%
+  kable_styling(full_width = FALSE,
+                position = "center",
+                font_size = 12)
+```
+
+
+## Archivage {#wp3.step.archiv}
+
+L'archivage sur le temps long se fera avec le [CINES](https://www.huma-num.fr/les-services-par-etapes/#preservation) (v. [Infrastructure Huma-Num](#humanum))
+
+## Publication {#wp3.step.public}
+
+Pour complaire aux directives de la Science ouverte et afin de garantir la  [FAIRisation](www.go-fair.org/fair-principles) des données, le projet Itineris va publier: 
+
+* du code informatique(#pub.code)
+* des documents de travail(#pub.work) 
+* des documents de données(#pub.data)
+* des articles scientifiques(#pub.sci) 
+* des colloques, *workshops*, etc.
+
+Ces documents, jeux de données, articles scientifiques et événements seront seront référencés sur le site web du projet.
+
+### Code informatique{#pub.code}
+
+Le code informatique généré par le projet Itineris va être rendu disponible sur les plateformes GitHub et GitLab. Publié préférentiellement sous la forme de fonctions, de *packages* (R), ou de librairies (Python), ce code sera accompagné de sa documentation (README.md, DESCRIPTION, docs/build/html, etc.).
+
+### Documents de travail{#pub.work}
+
+Des documents de travail (*working papers*) seront publiés avec des identifiants d'objets numériques (*digital object identifiers*, DOI) prenant en compte leur versionnage (*DOI versioning*).
+
+### Documents de données{#pub.data}
+
+Des documents de données (*data papers*) seront publiés sur des plateformes open-source et associés a des DOI.
+
+### Articles scientifiques{#pub.sci} 
+
+Des articles scientifiques seront publiés sur des plateformes open-source à comité de lecture (eg., [OpenEdition](https://www.openedition.org/?lang=en)), etc., *`r stri_rand_lipsum(1)`*
+
+
+### Sérialisation {#wp3.step.describ.serial}
+
+```{r serial-count, echo = F}
+example1.ITA <- rio::import('https://github.com/zoometh/itineris/blob/main/data/example_1.xlsx?raw=true')
+```
+
+La sérialisation des données va permettre d'écrire l'information sous forme de graphes [RDF](#Frdf). Nous prenons ici l'exemple de l'étude de la composition élémentaire d'un échantillon de **<span style="color:darkgrey">`r nrow(example1.ITA)`</span>** objets italiens. Les données viennent d'un [fichier XLSX déposé sur GitHub](https://github.com/zoometh/itineris/blob/main/data/example_1.xlsx?raw=true) et sont traitées à la volée par R.
+
+```{r serial-ital, echo = F}
+example1.ITA.t <- t(example1.ITA)
+# colnames(example1.t)[1] <- "valeurs"
+kable(example1.ITA.t, "html",
+      # row.names = F,
+      caption = "Analyses élémentaires, exemple 1, données italiennes") %>%
+  kable_styling(full_width = FALSE,
+                position = "center",
+                font_size=12)
+```
+Pour les besoins de la sérialisation, certains noms de champs sont retranscris en anglais en nous servant de la table de correspondances linguistique (voir ci-dessus).
+
+```{r serial, echo = F}
+example1.ENG <- example1.ITA
+names(example1.ENG) <- lexicon$ENG[match(names(example1.ITA), lexicon$ITA)]
+example1.ENG.t <- t(example1.ENG)
+# colnames(example1.t)[1] <- "valeurs"
+kable(head(example1.ENG.t), "html",
+      # row.names = F,
+      caption = "Analyses élémentaires, exemple 1, champs traduit en anglais") %>%
+  kable_styling(full_width = FALSE,
+                position = "center",
+                font_size=12)
+```
+
+Le langage de programmation R  offre différents *packages* ([rdflib](https://cran.r-project.org/web/packages/rdflib/vignettes/rdf_intro.html), [jsonld](https://cran.r-project.org/web/packages/jsonld/index.html), etc.) permettant de formater les données de l'étude sous la forme de *linked open data* (LOD), plus exactement sous la forme de triples RDF. Ici sur le même exemple, nous nous intéressont aux teneur en cuivre des objets et à leur provenance
+
+Où:
+
+* **Source** = sujet, le site de provenance
+* **Cu** = prédicat, la composition en cuivre
+* **NumLab** = objet, le nom de l'objet
+
+
+```{r rdf, echo=TRUE}
+base <- "https://github.com/zoometh/itineris/tree/main/"
+rdf.label <- "NumLab"
+rdf.type <- "Cu"
+rdf.about <- "Source"
+rdf <- rdf()
+for (i in 1:nrow(example1.ENG)){
+  rdf %>% 
+    rdf_add(subject = paste0(base, example1.ENG[i, rdf.about]), 
+            predicate = paste0(base, example1.ENG[i, rdf.type]), 
+            object = example1.ENG[i, rdf.label]) 
+}
+rdf
+```
+Ces triples peuvent être sérialisés sous le format [JSON-LD](#MJsonLd) qui est le format le plus populaire pour décrire des données web. 
+
+```{r json, echo=TRUE}
+json.name <- paste0(local.dir, "data/",
+                    rdf.label, "_", rdf.type, "_", rdf.about, "_",
+                    Sys.Date(),
+                    ".json")
+rdf_serialize(rdf, json.name, "jsonld") 
+```
+  
+Ce fichier peut ensuite être déposé sur une plateforme :
+
+<center>[https://raw.githubusercontent.com/zoometh/itineris/main/data/NumLab_Cu_Source_2021-10-01.json](https://raw.githubusercontent.com/zoometh/itineris/main/data/NumLab_Cu_Source_2021-10-01.json)</center>
+  
+  
+La base de données, accessible en ligne, est interopérable avec des procédures R (package  [RODBC](https://cran.r-project.org/web/packages/RODBC/index.html)) et Python ([pyodbc](https://pypi.org/project/pyodbc/)). Ces procédures facilitent l'intéropérabilité des données (*linked data*, LD) et le traitement de leur métadonnées. Celles-ci seront représentées préférentiellement avec [D](#MJsonLd), sous forme de graphes [RDF](#Frdf). Les données sérialisées seront décrites avec [OWL](https://www.w3.org/OWL/) ou [PROV-O](https://www.w3.org/TR/prov-o/) et leur historique, et celui de leur métadonnées, se fera avec [VoID](https://www.w3.org/TR/void/). Une fois sérialisées, ces données sont trouvable avec [SPARQL](https://www.w3.org/TR/rdf-sparql-query/).
+
+# Infrastructuration des données {#humanum}
+
+L'infrastructure du TGIR [Huma-Num](https://www.huma-num.fr/) -- l'instance française de la *Digital Research Infrastructure for the Arts and Humanities* (DARIAH-EU) -- offre une grille de services facilitant l'inscription des projets de recherche dans le contexte de la Science ouverte. La cohérence de la gestion des données scientifiques du projet sera assurée par l'utilisation de ces services:
+
+* développement intégré dans le conteneur d'application logicielles [GitLab](https://gitlab.huma-num.fr)
+* échange des documents de travail (*working papers*, versionnage) sur le [ShareDocs](https://documentation.huma-num.fr/sharedocs-stockage/)
+* etc.
+
+
+```{r humanum, echo=F}
+humanum.logo.root <- "https://raw.githubusercontent.com/zoometh/golasecca/main/LOD/www/humanum/"
+isidore <- paste0(humanum.logo.root, "isidore.png")
+traiter_ <- paste0(humanum.logo.root, "_traiter.png")
+nakalona <- paste0(humanum.logo.root, "nakalona.png")
+archiver_ <- paste0(humanum.logo.root, "cines.png")
+stocker <- paste0(humanum.logo.root, "sharedocs.png")
+service.fr <- c("Signaler",
+                "Traiter",
+                "Exposer",
+                "Archiver",
+                "Stocker")
+service.url <- c("https://isidore.science/",
+                 "https://www.huma-num.fr/les-services-par-etapes/#traitement",
+                 "https://www.nakalona.fr/",
+                 "https://www.huma-num.fr/les-services-par-etapes/#preservation",
+                 "https://documentation.huma-num.fr/sharedocs-stockage/")
+service <- c(paste0("[",service.fr,"](",service.url,")"))
+service.logo <- c(paste0("![](",isidore," 'ISIDORE'){width=100px}"),
+                  paste0("![](",traiter_," 'R, et autres'){width=100px}"),
+                  paste0("![](",nakalona," 'NAKALONA'){width=100px}"),
+                  paste0("![](",archiver_," 'CINES'){width=100px}"),
+                  paste0("![](",stocker," 'ShareDocs'){width=100px}"))
+df.humanum <- data.frame(service = service,
+                         logo = service.logo,
+                         stringsAsFactors = F)
+kable(df.humanum,"html",
+      row.names = F,
+      caption = "Grille des services de la TGIR Huma-Num") %>%
+  kable_styling(full_width = FALSE,
+                position = "center",
+                font_size=14)
+```
+
+
+# Membres et work packages {#part}
+
+```{r calibrate, fig.height= 14, fig.width= 14, echo=FALSE, warning = F, fig.align='center', fig.cap="Description des *Work packages* (WP), *task* (T.) et des acteurs institutionnels"}
+
+# # View(dd)
+mbr_nodes.res <- read.table(url.mbr_nodes.res, header = T, sep = "\t", row.names = NULL)
+mbr_edges.res <- read.table(url.mbr_edges.res, header = T, sep = "\t", row.names = NULL)
+visNetwork(mbr_nodes.res, mbr_edges.res, 
+           width = "900px", height = "900px") %>%
+  visEdges(shadow = TRUE,
+           smooth = TRUE,
+           arrows =list(to = list(enabled = TRUE, 
+                                  scaleFactor = 1)),
+           color = list(color = "lightblue", highlight = "red"))
+```
+
+
+## Work packages
+
+### WP1: Archaeometric analysis{#WP1}
+
+*`r stri_rand_lipsum(1)`*
+
+### WP2: Archaeological & Technological analysis{#WP2}
+
+*`r stri_rand_lipsum(1)`*
+
+### WP3: Data management & Computational archaeology{#WP3}
+
+*`r stri_rand_lipsum(1)`*
+
+# Glossaire
+
+## Modèles des données et métadonnées
+
+### EXIF{#MExif}
+
+Ce standard pour la description des métadonnées des photographies numériques est le plus largement utilisé. Il est intéropérable avec le langage R (package [exifr](https://cran.r-project.org/web/packages/exifr/index.html))
+
+### INSPIRE{#MInspire}
+
+Norme internationale pour les métadonnées spatiales (ISO [19139:2007](https://www.iso.org/standard/32557.html))
+
+### JSON-LD{#MJsonLd}
+
+Méthode d'encodage de données structurées pour [.json](#Fjson) ou [.geojson](#Fgeojson). C'est une recommendation du W3C. JSON-LD est l'une des syntaxes possibles du [RDF](#Frdf) et va être intégré par Google.
+
+### RDF{#Frdf}
+
+Les triples RDF, ou graphes RDF, forment le standard et langage de base de description du web sémantique et du web de données. Il a été développé et adopté par le W3C pour l'échange des données.
+
+### XMP{#MXmp}
+
+Standard pour la description des métadonnées des photographies numériques au format [.xml](#Fxml). Sérialisable ([RDF](#Frdf)/[.xml](#Fxml)), il supporte entièrement le [Dublin Core](https://www.iso.org/standard/71339.html). 
+
+## Formats ouverts
+
+### *plain text*{#Fplaintext}
+
+Les formats *plain text* .txt, .csv et .tsv sont parmi les plus couramment utilisés pour les données alphanumériques. Le format .wkt est le standard d'écriture des données spatiales et géométriques.
+
+### .geojson{#Fgeojson}
+
+Dérivé de [.json](#Fjson), un objet .geojson peut être une géométrie, une entité ou une collection d'entités JavaScript.
+
+### .json{#Fjson}
+
+C'est LE format le plus courant pour écrire les graphes [RDF](#Frdf). Le format .json est en train de remplacer [.xml](#Fxml) comme principal format d'échange de données (v. aussi [.geojson](#Fgeojson) et [JSON-LD](#MJsonLd)).
+
+### .ply{#Fply}
+
+C'est le format privilégié pour l'enregistrement des données 3D, notamment pour le Web3D.
+
+### .shp{#Fshp}
+
+Le format .shp est le standard pour les données vectorielles géoréférencées, utilisé par tous les SIG (v. [.wkt](#Fplaintext))
+
+### .u3d{#Fu3d}
+
+Format des données 3D qui peut être intégré dans un document LaTeX ou Acrobat.
+
+### .x3d{#Fx3d}
+
+Dans sa nouvelle norme HTML5, le consortium Web3D a mis au point une interface JavaScript qui permet de prendre en charge le format .x3d de manière native dans une page Web.
+
+### .xml{#Fxml}
+
+Syntaxe extensible créé pour faciliter l'échange automatisé de contenus complexes (arbres, texte enrichi). la syntaxe XML cpermet de définir différents espaces de noms (≠ HTML). C'est l'une des syntaxes possibles du [RDF](#Frdf). Un fichier .xml peut être affiché en .css ou .xsl.
+
