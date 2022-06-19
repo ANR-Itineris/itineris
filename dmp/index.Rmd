@@ -1,6 +1,6 @@
 ---
 title: "<b>Plan de Gestion des Données</b><br> du projet ANR <b>Itineris</b><br>"
-bibliography: "D:/DocumentationArcheo/biblio12.bib"
+# bibliography: "D:/DocumentationArcheo/biblio12.bib"
 # bibliography: "C:/Users/supernova/Dropbox/My PC (supernova-pc)/Documents/golasecca/bibliographie.bib"
 # author: "Thomas Huet"
 # runtime: shiny
@@ -21,12 +21,12 @@ output:
 #   private_token = Sys.getenv("GITLAB_COM_TOKEN"))
 # url.root <- "https://raw.githubusercontent.com/zoometh/itineris/main/www/"
 # url.root <- "https://gitlab.huma-num.fr/thuet/itineris/-/blob/main/www/"
-url.root <- "C:/Rprojects/itineris/www/"
+url.root <- "C:/Rdev-itineris/itineris/www/"
 htmltools::img(src = paste0(url.root, "logo.png"), 
                alt = 'logo', 
                width = '250px',
                style = 'position:absolute; top:0; right:0; padding:10px;')
-knitr::include_graphics(paste0(url.root, "logo.png"))
+# knitr::include_graphics(paste0(url.root, "logo.png"))
 # print(getwd())
 ```
 
@@ -62,8 +62,9 @@ library(rdflib)
 text.size <- 15
 
 # informations résumés
-local.dir <- "C:/Users/supernova/Dropbox/My PC (supernova-pc)/Documents/itineris_gl/"
-data.base <- 'https://gitlab.huma-num.fr/thuet/itineris/-/raw/main/data/'
+#local.dir <- "C:/Users/supernova/Dropbox/My PC (supernova-pc)/Documents/itineris_gl/"
+# data.base <- 'https://gitlab.huma-num.fr/thuet/itineris/-/raw/main/data/'
+data.base <- "https://raw.githubusercontent.com/ANR-Itineris/itineris/main/data/"
 url.data.res <- paste0(data.base, 'data_resume.tsv')
 url.tools.res <- paste0(data.base, 'tools_resume.tsv')
 url.isos.res <- paste0(data.base, 'isos_resume.tsv')
@@ -206,7 +207,7 @@ Les données seront étudiées par des équipes françaises et italiennes. Par a
 ```{r lexicon, echo = F, fig.cap = ""}
 # TODO: changer local pour GitLab
 # lexicon <- rio::import('https://github.com/zoometh/itineris/blob/main/fra-ita-eng/lexicon.xlsx?raw=true')
-lexicon <- openxlsx::read.xlsx('C:/Users/supernova/Dropbox/My PC (supernova-pc)/Documents/itineris_gl/data/lexicon.xlsx')
+lexicon <- openxlsx::read.xlsx('C:/Rdev-itineris/itineris/data/lexicon.xlsx')
 lexicon.idark.ok <- lexicon[!is.na(lexicon$IdArk), ]
 # retrouve l'URL PACTOLS
 lexicon.idark.ok$IdArk <- paste0("[", lexicon.idark.ok$IdArk, "]",
@@ -334,7 +335,7 @@ Des articles scientifiques seront publiés sur des plateformes open-source à co
 ### Sérialisation {#wp3.step.describ.serial}
 
 ```{r serial-count, echo = F}
-example1.ITA <- rio::import('https://github.com/zoometh/itineris/blob/main/data/example_1.xlsx?raw=true')
+example1.ITA <- rio::import('https://github.com/ANR-Itineris/itineris/blob/main/data/example_1.xlsx?raw=true')
 ```
 
 La sérialisation des données va permettre d'écrire l'information sous forme de graphes [RDF](#Frdf). Nous prenons ici l'exemple de l'étude de la composition élémentaire d'un échantillon de **<span style="color:darkgrey">`r nrow(example1.ITA)`</span>** objets italiens. Les données viennent d'un [fichier XLSX déposé sur GitHub](https://github.com/zoometh/itineris/blob/main/data/example_1.xlsx?raw=true) et sont traitées à la volée par R.
@@ -373,8 +374,8 @@ Où:
 * **NumLab** = objet, le nom de l'objet
 
 
-```{r rdf, echo=TRUE}
-base <- "https://github.com/zoometh/itineris/tree/main/"
+```{r rdf, eval = FALSE, echo=TRUE}
+base <- "https://github.com/ANR-Itineris/itineris/tree/main/"
 rdf.label <- "NumLab"
 rdf.type <- "Cu"
 rdf.about <- "Source"
@@ -387,9 +388,10 @@ for (i in 1:nrow(example1.ENG)){
 }
 rdf
 ```
+
 Ces triples peuvent être sérialisés sous le format [JSON-LD](#MJsonLd) qui est le format le plus populaire pour décrire des données web. 
 
-```{r json, echo=TRUE}
+```{r json, eval = FALSE, echo=TRUE}
 json.name <- paste0(local.dir, "data/",
                     rdf.label, "_", rdf.type, "_", rdf.about, "_",
                     Sys.Date(),
@@ -491,7 +493,7 @@ Pooling different but complementary analysis techniques will help to solve the c
 
 Le thésaurus [PACTOLS](https://pactols.frantiq.fr/opentheso/index.xhtml) pour l'archéologie, depuis la préhistoire jusqu'à la période contemporaine et les sciences de l'Antiquité. Par exemple l'objet "fibule" de PACTOLS (IdArk: [26678/pcrt1tSmMf0Tw8](https://ark.frantiq.fr/ark:/26678/pcrt1tSmMf0Tw8)) est décrit par un graphe RDF enregistré dans la dossier [data/](https://gitlab.huma-num.fr/thuet/itineris/-/raw/main/data/TH_1_14737_.rdf). Nous le lisons en local avec le package `rdflib` et l'affichons sous forme de `jsonld`
 
-```{r pactols, fig.height= 14, fig.width= 14, echo=TRUE, warning = F, fig.align='center', fig.cap=""}
+```{r pactols, eval = FALSE, fig.height= 14, fig.width= 14, echo=TRUE, warning = F, fig.align='center', fig.cap=""}
 library(rdflib)
 options(rdf_print_format = "jsonld")
 fibule.ark <- paste0(local.dir, "data/TH_1_14737_.rdf")
