@@ -22,7 +22,7 @@ library(DT)
 library(openxlsx)
 
 # isotop dataset
-path.data <- "C:/Rprojects/_coll/3dkernel/"
+path.data <- "C:/Rprojects/_coll/220808 CAA22/3dkernel/"
 df.isotop <- read.xlsx(paste0(path.data, "3dkernel.xlsx"))
 xyz.isotop <- c("var1", "var2", "var3")
 color.isotop <- c("color")
