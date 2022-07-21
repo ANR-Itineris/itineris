@@ -28,5 +28,5 @@ isotop_datatable <- function(df,
                                                      toupper(df$color))
     )
   htmlwidgets::saveWidget(dt, out.plot)
-  print(paste("DT interactive table created in:", out.plot))
+  print(paste("interactive datatable created in:", out.plot))
 }

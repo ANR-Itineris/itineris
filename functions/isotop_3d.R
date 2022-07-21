@@ -30,5 +30,5 @@ isotop_3d <- function(df,
                                            zaxis = list(title = vars[3])))
   # print(d3)
   htmlwidgets::saveWidget(d3, out.plot)
-  print(paste("3D interactive plot created in:", out.plot))
+  print(paste("interactive 3D plot created in:", out.plot))
 }
