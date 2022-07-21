@@ -1,16 +1,16 @@
-#' Create an HTML interactive chart with the values of 3 different isotops
-#' @name isotop_3d
-#' @description get a dataframe and create a 3D plot
+#' Create an HTML interactive table  with the values of 3 different isotops
+#' @name isotop_datatable
+#' @description get a simple dataframe and create an interactive datatable
 #'
 #' @param df the dataframe. The color is displayed on the 'object' field,
-#' @param out.plot the path and name of the created 3D plot
+#' @param out.plot the path and name of the created intearctive data table
 #'
-#' @return an HML 3D plot
+#' @return an DT table
 #'
 #' @examples
 #'
 #' @export
-isotop_3d <- function(df, out.plot = paste0(getwd(), "/data/isotop_results.html")){
+isotop_datatable <- function(df, out.plot = paste0(getwd(), "/data/isotop_results.html")){
   dt <- DT::datatable(
     df[, c(1:7)],
     rownames = FALSE,
