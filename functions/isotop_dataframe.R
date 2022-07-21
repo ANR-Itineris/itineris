@@ -1,5 +1,5 @@
 #' Create a simple dataframe
-#' @name isotop_3d
+#' @name isotop_dataframe
 #' @description
 #'
 #' @param df the dataframe. The color is displayed on the 'object' field
