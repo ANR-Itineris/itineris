@@ -14,10 +14,14 @@
 isotop_datatable <- function(df,
                              color.column = "object",
                              out.plot = paste0(getwd(), "/data/isotop_datatable.html")){
+  # print(colnames(df))
+  # df$type <- NULL
   dt <- DT::datatable(
-    df[, c(1:7)],
+    # df[, c(1:7)],
+    df,
     rownames = FALSE,
     width = "90%",
+    escape = c("color", "type"),
     editable = FALSE) %>%
     DT::formatStyle("object",
                     backgroundColor = DT::styleEqual(df[, color.column],
