@@ -12,3 +12,9 @@ isotop_datatable(df.isotop, out.plot = "C:/Rdev-itineris/itineris/data/isotop_da
 
 source("isotop_3d.R")
 isotop_3d(df.isotop, out.plot = "C:/Rdev-itineris/itineris/data/isotop_3d.html")
+
+
+
+source("map_leaflet.R")
+df.isotop <- read.table(paste0(path.data, "sites_coords.tsv"), sep = "\t", header = T)
+isotop_3d(df.isotop, out.plot = "C:/Rdev-itineris/itineris/data/isotop_3d.html")
