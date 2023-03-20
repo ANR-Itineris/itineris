@@ -1,0 +1,77 @@
+---
+title: "From thesaurus to semantic network"
+subtitle: "Make (re)usable the ANRJCJC Itineris data"
+author: "Cicolani Veronica, Thomas Huet, Guillaume Reich, Sebastien Durost"
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/ANR-Itineris/itineris/master/www/logo.png"
+    data-background-size: "40%"
+    data-background-opacity: "0.2"
+format:
+  revealjs: 
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
+    code-fold: true
+    code-summary: "<small>Code</small>"
+    slide-number: true
+    chalkboard: true
+    scrollable: true
+    preview-links: auto
+    reference-location: document
+    footnotes-hover: true
+    logo: https://raw.githubusercontent.com/ANR-Itineris/itineris/master/www/logo.png
+    footer: "From thesaurus to semantic network <img src='https://raw.githubusercontent.com/ANR-Itineris/itineris/master/www/logo.png' style='height: 35px;vertical-align: middle;'> CAA2023 - <em>50 years of synergy</em>, Amsterdam"
+    margin: 0
+    width: 1200
+---
+
+ 
+
+# ANRJCJC Itineris {background-color="#f3e7b3"}
+
+```{r, echo=FALSE}
+library(plotly)
+```
+
+## Veronica 1/2
+
+
+## Veronica 2/2
+
+
+# Write once <br>and reuse many times {background-color="#f3e7b3"}
+
+
+## Thomas 1/4
+
+
+```{=html}
+<iframe width="1200" height="700" src="https://anr-itineris.github.io/Modeling/3DHOP/minimal/fibule.html" title="Arches doc"></iframe>
+```
+
+
+## Thomas 2/4
+
+
+## Thomas 3/4
+
+
+## Thomas 4/4
+
+
+# Grammar {background-color="#f3e7b3"}
+
+
+## Guillaume 1/2
+
+```{=html}
+<iframe width="1200" height="700" src="https://thesaurus.mom.fr/opentheso/?idt=th101" title="Arches doc"></iframe>
+```
+
+
+## Guillaume 2/2
+
+
+# Conclusion {background-color="#f3e7b3"}
+
+
+## From thesaurus to semantic network
+
