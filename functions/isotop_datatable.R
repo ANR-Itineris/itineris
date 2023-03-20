@@ -4,7 +4,7 @@
 #'
 #' @param df the dataframe. The color is displayed on the 'object' field
 #' @param color.column the name on which the different colors will be setup
-#' @param out.plot the path and name of the created intearctive data table
+#' @param out.plot the path and name of the created interactive data table
 #'
 #' @return an DT table with a confirmation message
 #'

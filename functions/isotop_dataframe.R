@@ -11,10 +11,11 @@
 #'
 #' path.data <- "https://raw.githubusercontent.com/ANR-Itineris/itineris/main/data/"
 #' df.isotop <- read.table(paste0(path.data, "isotop_results.tsv"), sep = "\t", header = T)
-#' df.isotop<- isotop_dataframe(df.isotop)
+#' df.isotop <- isotop_dataframe(df.isotop)
 #'
 #' @export
-isotop_dataframe<- function(df, color.column = "object"){
+isotop_dataframe<- function(df,
+                            color.column = "object"){
   u.colors <- unique(df[, color.column])
   df$type <- df[, color.column]
   df.colors <- data.frame(type = u.colors,
