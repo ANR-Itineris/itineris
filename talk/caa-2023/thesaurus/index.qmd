@@ -46,7 +46,7 @@ https://github.com/ANR-Itineris/itineris#anr-itineris-
 
 ## item 09-517499
 
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/09-517499.jpg'>
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/20475.01 MAN.jpg'>
 
 
 ## 3D model
@@ -69,11 +69,16 @@ https://github.com/ANR-Itineris/itineris#anr-itineris-
 ## Guillaume 1/2
 
 ```{=html}
-<iframe width="1200" height="700" src="https://thesaurus.mom.fr/opentheso/?idt=th101" title="Arches doc"></iframe>
+<iframe width="1200" height="700" src="https://thesaurus.mom.fr/opentheso/?idt=th101"></iframe>
 ```
 
 
 ## Guillaume 2/2
+
+```{=html}
+<iframe width="1200" height="700" src="https://thesaurus.mom.fr/opentheso/api/graph?theso=th101&id=259602&lang=fr"></iframe>
+```
+
 
 
 # Conclusion {background-color="#f3e7b3"}
