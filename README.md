@@ -7,7 +7,6 @@ GitHub repository of the Itineris ANR project.
 
 Development of an R package for data vizualisation and statistics, [itineRis](https://github.com/zoometh/itineRis#itineris-)
 
-For``` itineRis::isotop_ternaryplot(df.isotop)```
 <p align="center">
   <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/itineRis/main/results/isotop_ternaryplot.png" width="700">
   <br>
