@@ -43,6 +43,21 @@ library(plotly)
 
 https://github.com/ANR-Itineris/itineris#anr-itineris-
 
+## Database
+
+
+
+## Analysis
+
+```{.r}
+
+
+```
+
+```{=html}
+<iframe width="1200" height="700" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim3/" title="Arches doc"></iframe>
+```
+
 
 ## 20475.01 MAN
 
