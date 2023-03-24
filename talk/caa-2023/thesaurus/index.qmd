@@ -44,7 +44,7 @@ library(plotly)
 https://github.com/ANR-Itineris/itineris#anr-itineris-
 
 
-## item 09-517499
+## 20475.01 MAN
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/20475.01 MAN.jpg'>
 
