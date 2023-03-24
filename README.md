@@ -10,7 +10,7 @@ Development of an R package for data vizualisation and statistics, [itineRis](ht
 <p align="center">
   <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/itineRis/main/results/isotop_ternaryplot.png" width="700">
   <br>
-    <em>Interactive ternary plot created by the <a href="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim3/">isotop_ternaryplot()</a> function </em>
+    <em>Interactive ternary plot created by the <a href="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim3/">isotop_ternaryplot()</a> function </em>
 </p>
 
 ## Talks
