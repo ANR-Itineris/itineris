@@ -39,6 +39,9 @@ library(plotly)
 
 # Write once and reuse many times {background-color="#f3e7b3"}
 
+## IT stack
+
+https://github.com/ANR-Itineris/itineris#anr-itineris-
 
 
 ## item 09-517499
