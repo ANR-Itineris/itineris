@@ -40,16 +40,18 @@ library(plotly)
 # Write once and reuse many times {background-color="#f3e7b3"}
 
 
-## Thomas 1/4
 
-<img src='https://raw.githubusercontent.com/anr-itineris/eamena-arches-dev/master/www/img/09-517499.jpg'>
+## item 09-517499
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/09-517499.jpg'>
+
+
+## 3D model
+
 
 ```{=html}
 <iframe width="1200" height="700" src="https://anr-itineris.github.io/Modeling/3DHOP/minimal/fibule.html" title="Arches doc"></iframe>
 ```
-
-
-## Thomas 2/4
 
 
 ## Thomas 3/4

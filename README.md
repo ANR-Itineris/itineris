@@ -1,7 +1,22 @@
 # ANR Itineris <img src="www/logo.png" align="right" width="300"/>
 > Italic metalwork Techniques during the Early Iron AgE. Rethinking cultural InteractionS
 
-GitHub repository of the Itineris ANR project
+GitHub repository of the Itineris ANR project.
+
+## package itineRis
+
+Development of an R package for data vizualisation and statistics, [itineRis](https://github.com/zoometh/itineRis#itineris-)
+
+For``` itineRis::isotop_ternaryplot(df.isotop)```
+<p align="center">
+  <img alt="img-name" src="results/isotop-ternaryplot-shiny.png" width="700">
+  <br>
+    <em>Interactive ternary plot created by the <a href="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim3/">isotop_ternaryplot()</a> function </em>
+</p>
+
+## Talks
+
+**2023** CAA, Amsterdam, ["From thesaurus to semantic network"](https://ANR-Itineris.github.io/itineris/talk/caa-2023/thesaurus)
 
 ## Workpackages & Tasks
 
