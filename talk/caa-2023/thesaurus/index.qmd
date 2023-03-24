@@ -42,6 +42,7 @@ library(plotly)
 
 ## Thomas 1/4
 
+<img src='https://raw.githubusercontent.com/anr-itineris/eamena-arches-dev/master/www/img/09-517499.jpg'>
 
 ```{=html}
 <iframe width="1200" height="700" src="https://anr-itineris.github.io/Modeling/3DHOP/minimal/fibule.html" title="Arches doc"></iframe>
