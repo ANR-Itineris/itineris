@@ -64,6 +64,10 @@ thesaurus(root = "artefact",
 <iframe width="1200" height="700" src="https://zoometh.github.io/itineRis/results/artefact"></iframe>
 ```
 
+::: {.notes}
+The `thesaurus()` function run a SPAQL query on the thesaurus to create an interactive graph
+:::
+
 ## Analysis
 
 ```{.r}
