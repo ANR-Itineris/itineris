@@ -49,9 +49,10 @@ https://github.com/ANR-Itineris/itineris#anr-itineris-
 
 ## Analysis
 
+Package 
+
 ```{.r}
-
-
+isotop_ternaryplot(df.isotop)
 ```
 
 ```{=html}
@@ -78,7 +79,38 @@ https://github.com/ANR-Itineris/itineris#anr-itineris-
 ## Thomas 4/4
 
 
-# Grammar {background-color="#f3e7b3"}
+# Grammar of Resuable data {background-color="#f3e7b3"}
+
+
+## OpenTheso
+
+::: {.panel-tabset}
+
+### ISO25964-1
+
+```{=html}
+<iframe width="1200" height="700" src="https://www.iso.org/standard/53657.html"></iframe>
+```
+
+
+### ISO25964-2
+
+```{=html}
+<iframe width="1200" height="700" src="https://www.iso.org/standard/53658.html"></iframe>
+```
+
+:::
+
+::: {.notes}
+Opentheso is a multilingual, multi-paradigm thesaurus manager. Created in 2005. It supports poly-hierarchies in accordance with ISO25964 (25964-1 and 25964-2)
+:::
+
+### RDF triple-stores
+
+
+::: {.notes}
+The aim is to store the RDF triples in ISIDORE, the largest scientific open data project/platform in France with over 3,000 data sources
+:::
 
 
 ## Guillaume 1/2

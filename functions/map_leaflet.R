@@ -14,7 +14,8 @@
 # path.data <- "https://raw.githubusercontent.com/ANR-Itineris/itineris/main/data/"
 # df <- read.table(paste0(path.data, "sites_coords.tsv"), sep = "\t", header = T)
 
-map_leaflet <- function(df, out.plot = paste0(getwd(), "/data/map_sites.html")){
+map_leaflet <- function(df,
+                        out.plot = paste0(getwd(), "/data/map_sites.html")){
   #lbl <- '<a href = "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/EAMENA-0164997.geojson">EAMENA-0164997.geojson</a>'
   map.name <- "map_sites"
   ea.map <- leaflet::leaflet(df) %>%
