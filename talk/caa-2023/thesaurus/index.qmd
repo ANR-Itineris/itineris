@@ -36,6 +36,8 @@ library(plotly)
 
 ## Veronica 2/2
 
+## Data Management Plan
+
 
 # Write once and reuse many times {background-color="#f3e7b3"}
 
