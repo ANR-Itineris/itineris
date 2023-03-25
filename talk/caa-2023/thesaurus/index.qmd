@@ -18,7 +18,7 @@ format:
     reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/ANR-Itineris/itineris/master/www/logo.png
-    footer: "From thesaurus to semantic network <img src='https://raw.githubusercontent.com/ANR-Itineris/itineris/master/www/logo.png' style='height: 35px;vertical-align: middle;'> CAA2023 - <em>50 years of synergy</em>, Amsterdam"
+    footer: "From thesaurus to semantic network <img src='https://raw.githubusercontent.com/ANR-Itineris/itineris/master/www/logo.png' style='height: 35px;vertical-align: middle;'> <https://github.com/ANR-Itineris/itineris>  CAA2023, <em>50 years of synergy</em>, Amsterdam, 2023"
     margin: 0
     width: 1200
 ---
@@ -36,52 +36,47 @@ library(plotly)
 
 ## Veronica 2/2
 
-## Data Management Plan
-
 
 # Write once and reuse many times {background-color="#f3e7b3"}
 
-## IT stack
 
-https://github.com/ANR-Itineris/itineris#anr-itineris-
+## Data Management Plan
+
 
 ## Database
 
 
+### Data management and analysis
+
+Package R ***itineRis*** <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 35px;vertical-align: middle;'>
+
+## Management
+
+```{.r}
+thes <- "https://raw.githubusercontent.com/ANR-Itineris/itineris/main/lod/thesaurus/Itineris_th101.rdf"
+thesaurus(root = "artefact",
+          outPlot = "collapsibleTree",
+          export.plot = T,
+          outDir = "C:/Rprojects/itineRis/results/")
+```
+
+```{=html}
+<iframe width="1200" height="700" src="https://zoometh.github.io/itineRis/results/artefact"></iframe>
+```
 
 ## Analysis
-
-Package 
 
 ```{.r}
 isotop_ternaryplot(df.isotop)
 ```
 
 ```{=html}
-<iframe width="1200" height="700" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim3/" title="Arches doc"></iframe>
+<iframe width="1200" height="700" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim3/"></iframe>
 ```
 
+:::
 
-## 20475.01 MAN
-
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/20475.01 MAN.jpg'>
-
-
-## 3D model
-
-
-```{=html}
-<iframe width="1200" height="700" src="https://anr-itineris.github.io/Modeling/3DHOP/minimal/fibule.html" title="Arches doc"></iframe>
-```
-
-
-## Thomas 3/4
-
-
-## Thomas 4/4
-
-
-# Grammar of Resuable data {background-color="#f3e7b3"}
+# Grammar for Reusable data {background-color="#f3e7b3"}
 
 
 ## OpenTheso
@@ -107,7 +102,7 @@ isotop_ternaryplot(df.isotop)
 Opentheso is a multilingual, multi-paradigm thesaurus manager. Created in 2005. It supports poly-hierarchies in accordance with ISO25964 (25964-1 and 25964-2)
 :::
 
-### RDF triple-stores
+## RDF triple-store
 
 
 ::: {.notes}
@@ -127,6 +122,28 @@ The aim is to store the RDF triples in ISIDORE, the largest scientific open data
 ```{=html}
 <iframe width="1200" height="700" src="https://thesaurus.mom.fr/opentheso/api/graph?theso=th101&id=259602&lang=fr"></iframe>
 ```
+
+
+# Case study {background-color="#f3e7b3"}
+
+
+## 20475.01 MAN
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/20475.01 MAN.jpg'>
+
+
+## 3D model
+
+
+```{=html}
+<iframe width="1200" height="700" src="https://anr-itineris.github.io/Modeling/3DHOP/minimal/fibule.html" title="Arches doc"></iframe>
+```
+
+
+## Thomas 3/4
+
+
+## Thomas 4/4
 
 
 
