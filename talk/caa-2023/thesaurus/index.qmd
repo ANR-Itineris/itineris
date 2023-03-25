@@ -43,14 +43,26 @@ library(plotly)
 ## Data Management Plan
 
 
-## Database
+## IT stack
+
+### Database
+
+### Git
+
+### Programming
+
+Package R ***itineRis*** <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 35px;vertical-align: middle;'>
+
+
+:::
 
 
 ### Data management and analysis
 
-Package R ***itineRis*** <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 35px;vertical-align: middle;'>
 
 ## Management
+
+Visualise the subgraph of `artefact` with ***itineRis*** <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 35px;vertical-align: middle;'>
 
 ```{.r}
 thes <- "https://raw.githubusercontent.com/ANR-Itineris/itineris/main/lod/thesaurus/Itineris_th101.rdf"
@@ -65,10 +77,32 @@ thesaurus(root = "artefact",
 ```
 
 ::: {.notes}
-The `thesaurus()` function run a SPAQL query on the thesaurus to create an interactive graph
+Reusability means **interactivity** and accessibility on the web. It also means reproductibility of results by sharing open datasets and functions
 :::
 
 ## Analysis
+
+### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle">
+
+```{.r}
+d <- hash::hash()
+d <- read_mines(d = d,
+                df.path = "C:/Rprojects/itineRis/results/Coordinates-mines_Thomas Huet.xlsx")
+map_leaflet(d = d,
+            d.coords = "mines.coords",
+            export.plot = T,
+            out.plot = "map_sites.html",
+            dirOut = "C:/Rprojects/itineRis/results/")
+```
+
+```{=html}
+<iframe width="1200" height="700" src="https://zoometh.github.io/itineRis/results/artefact"></iframe>
+```
+
+
+### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle">
+
+Create a <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle"> interactive ternary plot to visualise the results of lead isotopic analysis (LIA) with ***itineRis*** <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 35px;vertical-align: middle;'>
 
 ```{.r}
 isotop_ternaryplot(df.isotop)
