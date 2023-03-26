@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Itineris"
-  favicon: images/logo.png
+  favicon: "https://raw.githubusercontent.com/zoometh/thomashuet/master/img/prj_itineris.png"
   repo-url: https://github.com/quarto-dev/quarto-web
   page-footer:
     right:
