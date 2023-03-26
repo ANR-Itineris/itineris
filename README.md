@@ -1,4 +1,4 @@
-# ANR Itineris <img src="www/logo.png" align="right" width="300"/>
+# ANR Itineris <img src="www/logo.png" align="right" width="200"/>
 > Italic metalwork Techniques during the Early Iron AgE. Rethinking cultural InteractionS
 
 GitHub repository of the Itineris ANR project: https://anr.fr/Project-ANR-21-CE27-0010
