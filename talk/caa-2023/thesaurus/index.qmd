@@ -106,7 +106,6 @@ WP3 takes care of open-source data and tools to provide to the scientific commun
 <iframe width="1200" height="700" src="https://www.bibracte.fr/bibracte-numerique"></iframe>
 ```
 
-## Veronica 2/2
 
 
 # Write once and reuse many times {background-color="#f3e7b3"}
@@ -120,6 +119,10 @@ Hosted on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/
 ```{=html}
 <embed src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/dmp-Itineris.pdf" width="1000px" height="700px" />
 ```
+
+::: {.notes}
+DMP models including one in archaeology developed by the *Mémoires des Archéologues et des Sites Archéologiques* consortium
+:::
 
 
 ## IT stack
@@ -162,10 +165,7 @@ FileMaker
 :::
 
 
-## Data management and analysis
-
-
-## Management
+## Data Management
 
 Subgraph of 'artefact'
 
@@ -181,7 +181,7 @@ thesaurus(root = "artefact", outPlot = "collapsibleTree")
 Reusability means **interactivity** and accessibility on the web. It also means reproductibility of results by sharing open datasets and functions
 :::
 
-## Analysis <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 45px;vertical-align: middle;'>
+## Data Analysis <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 45px;vertical-align: middle;'>
 
 ::: {.panel-tabset}
 
@@ -236,6 +236,10 @@ Reusability means **interactivity** and accessibility on the web. It also means 
 <iframe width="1200" height="700" src="https://thesaurus.mom.fr/opentheso/?idt=th101"></iframe>
 ```
 
+::: {.notes}
+Bibracte has shown that the ISO 25964 standard for the management of thesauri is sufficiently flexible to describe the different "points of view" presiding over the elaboration of the specialised and evolving "micro-languages" of archaeologists
+:::
+
 ### <small>ISO25964-1</small>
 
 ```{=html}
@@ -268,19 +272,29 @@ The aim is to store the RDF triples in ISIDORE, the largest scientific open data
 :::
 
 
-# Case study {background-color="#f3e7b3"}
+# Case study: <br>the *fibula* 20475.01 MAN {background-color="#f3e7b3"}
 
 
-## 20475.01 MAN
+## 2D documentation
 
 ::: {.panel-tabset}
 
-### Photograph
+### Drawing
 
-Metadata
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/20475.01 MAN.png'>
+
+### Photograph
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/20475.01 MAN.jpg'>
 
+
+:::
+
+::: {.notes}
+Metadata
+:::
+
+## 3D documentation
 
 ### Sketchfab
 
@@ -288,9 +302,6 @@ Metadata
 ```{=html}
 <iframe width="1200" height="700"  src="https://sketchfab.com/models/cf75955152a14ff6a6ab4d3f08968b6d/embed"> </iframe>
 ```
-
-
-
 
 ### Local
 
