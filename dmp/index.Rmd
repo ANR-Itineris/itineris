@@ -455,6 +455,8 @@ kable(df.humanum,"html",
 ```{r calibrate, fig.height= 14, fig.width= 14, echo=FALSE, warning = F, fig.align='center', fig.cap="Description des *Work packages* (WP), *task* (T.) et des acteurs institutionnels"}
 
 # # View(dd)
+data.base <- "https://raw.githubusercontent.com/ANR-Itineris/itineris/main/data/"
+url.mbr_nodes.res <- paste0(data.base, 'mbr_nodes_resume.tsv')
 mbr_nodes.res <- read.table(url.mbr_nodes.res, header = T, sep = "\t", row.names = NULL)
 mbr_edges.res <- read.table(url.mbr_edges.res, header = T, sep = "\t", row.names = NULL)
 visNetwork(mbr_nodes.res, mbr_edges.res, 

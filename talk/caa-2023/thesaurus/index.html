@@ -408,10 +408,10 @@
 <h1>Research project</h1>
 
 </section>
-<section id="study-interactions-with-network-models" class="slide level2">
-<h2>Study interactions with network models</h2>
+<section id="study-of-interactions-with-network-analysis" class="slide level2">
+<h2>Study of interactions with network analysis</h2>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Archaeological Context</a></li><li><a href="#tabset-1-2">Sites</a></li><li><a href="#tabset-1-3">Personal items</a></li><li><a href="#tabset-1-4">References</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Archaeological Context</a></li><li><a href="#tabset-1-2">Items</a></li><li><a href="#tabset-1-3">Sites</a></li><li><a href="#tabset-1-4">References</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
 
@@ -447,6 +447,8 @@
 </section>
 <section id="data-management-plan" class="slide level2">
 <h2>Data Management Plan</h2>
+<p>Hosted on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-opidor.png" style="height: 80px; vertical-align:middle"> <a href="https://dmp.opidor.fr/plans" class="uri">https://dmp.opidor.fr/plans</a></p>
+<embed src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/dmp-Itineris.pdf" width="1000px" height="700px">
 </section>
 <section id="it-stack" class="slide level2">
 <h2>IT stack</h2>
@@ -457,38 +459,36 @@
 <p>FileMaker</p>
 </div>
 <div id="tabset-2-2">
+<p><br>
+</p>
 
 <table>
 <tbody>
 <tr>
 <td>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 80px; vertical-align:middle"> GitHub
 </td>
 <td>
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 40px; vertical-align:middle">
-</td>
-<td>
-<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 40px; vertical-align:middle">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 80px; vertical-align:middle"> GitLab
 </td>
 </tr>
 <tr>
 <td>
+<small><a href="https://github.com/ANR-Itineris" class="uri">https://github.com/ANR-Itineris</a></small>
 </td>
 <td>
-https://gitlab.huma-num.fr/thuet/itineris
+<small><a href="https://gitlab.huma-num.fr/thuet/itineris" class="uri">https://gitlab.huma-num.fr/thuet/itineris</a></small>
 </td>
 </tr>
 </tbody>
 
 </table>
-<p>GitHub and GiLab</p>
 </div>
 <div id="tabset-2-3">
-<p>Package R <strong><em>itineRis</em></strong> <img src="https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png" style="height: 45px;vertical-align: middle;"></p>
-<p><img src="https://raw.githubusercontent.com/zoometh/itineRis/master/results/r-stack-logo.png"></p>
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-r.png" style="height: 65px;vertical-align: middle;"> Package <img src="https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png" style="height: 65px;vertical-align: middle;"></p>
+<center>
+<p><img src="https://raw.githubusercontent.com/zoometh/itineRis/master/results/r-stack-logo.png" style="height: 300px;"></p>
+</center>
 </div>
 </div>
 </div>
@@ -497,13 +497,9 @@ https://gitlab.huma-num.fr/thuet/itineris
 <h2>Data management and analysis</h2>
 </section>
 <section id="management" class="slide level2">
-<h2>Management <img src="https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png" style="height: 45px;vertical-align: middle;"></h2>
+<h2>Management</h2>
 <p>Subgraph of ‘artefact’</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>thes <span class="ot">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/ANR-Itineris/itineris/main/lod/thesaurus/Itineris_th101.rdf"</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">thesaurus</span>(<span class="at">root =</span> <span class="st">"artefact"</span>,</span>
-<span id="cb1-3"><a href="#cb1-3"></a>          <span class="at">outPlot =</span> <span class="st">"collapsibleTree"</span>,</span>
-<span id="cb1-4"><a href="#cb1-4"></a>          <span class="at">export.plot =</span> T,</span>
-<span id="cb1-5"><a href="#cb1-5"></a>          <span class="at">outDir =</span> <span class="st">"C:/Rprojects/itineRis/results/"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">thesaurus</span>(<span class="at">root =</span> <span class="st">"artefact"</span>, <span class="at">outPlot =</span> <span class="st">"collapsibleTree"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <iframe width="1200" height="700" src="https://zoometh.github.io/itineRis/results/artefact"></iframe>
 <aside class="notes">
 <p>Reusability means <strong>interactivity</strong> and accessibility on the web. It also means reproductibility of results by sharing open datasets and functions</p>
@@ -537,7 +533,7 @@ https://gitlab.huma-num.fr/thuet/itineris
 <iframe width="1200" height="700" src="https://zoometh.github.io/itineRis/results/map_sites.html"></iframe>
 </div>
 <div id="tabset-3-2">
-<p>Interactive ternary plot to visualise the results of lead isotopic analysis (LIA)</p>
+<p>Interactive ternary plot to visualise the results of lead isotopic analysis</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">isotop_ternaryplot</span>(df.isotop)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <iframe width="1200" height="700" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim3/"></iframe>
 </div>
@@ -594,6 +590,7 @@ https://gitlab.huma-num.fr/thuet/itineris
 </section>
 <section id="rdf-triple-store" class="slide level2">
 <h2>RDF triple-store</h2>
+<iframe width="1200" height="700" src="https://isidore.science/"></iframe>
 <aside class="notes">
 <p>The aim is to store the RDF triples in ISIDORE, the largest scientific open data project/platform in France with over 3,000 data sources</p>
 <style type="text/css">
@@ -649,11 +646,9 @@ https://gitlab.huma-num.fr/thuet/itineris
 <h1>Conclusion</h1>
 
 </section>
-<section id="from-thesaurus-to-semantic-network" class="slide level2">
+<section id="from-thesaurus-to-semantic-network" class="slide level2" data-background-color="#f3e7b3">
 <h2>From thesaurus to semantic network</h2>
 <p><br>
-<br>
-<br>
 </p>
 <center>
 <p><span style="font-size: 70px;">Thank you </span></p>
