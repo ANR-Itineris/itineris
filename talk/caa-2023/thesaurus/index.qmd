@@ -302,6 +302,8 @@ Metadata
 
 ## 3D documentation
 
+::: {.panel-tabset}
+
 ### Sketchfab
 
 
