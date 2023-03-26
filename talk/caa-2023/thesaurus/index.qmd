@@ -62,6 +62,10 @@ Cicolani et Huet, 2019[^1]
 
 :::
 
+::: {.notes}
+characterisation of Italic bronze craftsmanship in the Early Iron Age.
+:::
+
 
 # ANRJCJC Itineris {background-color="#f3e7b3"}
 
@@ -91,8 +95,16 @@ htmlwidgets::saveWidget(organisation, "C:/Rdev-itineris/itineris-anr/org/organis
 <iframe width="1200" height="700" src="https://anr-itineris.github.io/itineris/org/organisation"></iframe>
 ```
 
+::: {.notes}
+WP3 takes care of open-source data and tools to provide to the scientific community open access results, codes and data produced during the project as well as after their publication.
+:::
+
+## Bibracte
 
 
+```{=html}
+<iframe width="1200" height="700" src="https://www.bibracte.fr/bibracte-numerique"></iframe>
+```
 
 ## Veronica 2/2
 
@@ -142,7 +154,7 @@ FileMaker
 
 <center>
 
-<img src='https://raw.githubusercontent.com/zoometh/itineRis/master/results/r-stack-logo.png' style="height: 400px;">
+<img src='https://raw.githubusercontent.com/zoometh/itineRis/master/results/r-stack-logo.png' style="height: 300px;">
 
 </center>
 
