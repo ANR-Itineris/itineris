@@ -66,8 +66,23 @@ Cicolani et Huet, 2019[^1]
 # ANRJCJC Itineris {background-color="#f3e7b3"}
 
 
+```{r}
+data.base <- "https://raw.githubusercontent.com/ANR-Itineris/itineris/main/data/"
+url.mbr_nodes.res <- paste0(data.base, 'mbr_nodes_resume.tsv')
+url.mbr_edges.res <- paste0(data.base, 'mbr_edges_resume.tsv')
+mbr_nodes.res <- read.table(url.mbr_nodes.res, header = T, sep = "\t", row.names = NULL)
+mbr_edges.res <- read.table(url.mbr_edges.res, header = T, sep = "\t", row.names = NULL)
+visNetwork::visNetwork(mbr_nodes.res, mbr_edges.res, 
+                                   width = "900px", height = "900px") %>%
+  visNetwork::visEdges(shadow = TRUE,
+                       smooth = TRUE,
+                       arrows =list(to = list(enabled = TRUE, 
+                                              scaleFactor = 1)),
+                       color = list(color = "lightblue", highlight = "red"))
+```
 
-## Veronica 1/2
+
+## Partners
 
 
 ## Veronica 2/2
