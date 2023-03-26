@@ -275,6 +275,12 @@ The aim is to store the RDF triples in ISIDORE, the largest scientific open data
 # Case study: <br>the *fibula* 20475.01 MAN {background-color="#f3e7b3"}
 
 
+## BD record
+
+
+## LIA sample
+
+
 ## 2D documentation
 
 ::: {.panel-tabset}
