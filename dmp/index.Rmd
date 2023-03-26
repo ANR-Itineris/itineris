@@ -459,13 +459,14 @@ data.base <- "https://raw.githubusercontent.com/ANR-Itineris/itineris/main/data/
 url.mbr_nodes.res <- paste0(data.base, 'mbr_nodes_resume.tsv')
 mbr_nodes.res <- read.table(url.mbr_nodes.res, header = T, sep = "\t", row.names = NULL)
 mbr_edges.res <- read.table(url.mbr_edges.res, header = T, sep = "\t", row.names = NULL)
-visNetwork(mbr_nodes.res, mbr_edges.res, 
+partners <- visNetwork(mbr_nodes.res, mbr_edges.res, 
            width = "900px", height = "900px") %>%
   visEdges(shadow = TRUE,
            smooth = TRUE,
            arrows =list(to = list(enabled = TRUE, 
                                   scaleFactor = 1)),
            color = list(color = "lightblue", highlight = "red"))
+htmlwidgets::saveWidget(partners, )
 ```
 
 
