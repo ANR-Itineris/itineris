@@ -92,7 +92,7 @@ htmlwidgets::saveWidget(organisation, "C:/Rdev-itineris/itineris-anr/org/organis
 
 
 ```{=html}
-<iframe width="1200" height="700" src="https://anr-itineris.github.io/itineris/org/organisation"></iframe>
+<iframe width="1200" height="500" src="https://anr-itineris.github.io/itineris/org/organisation"></iframe>
 ```
 
 ::: {.notes}
@@ -153,7 +153,7 @@ FileMaker
 
 ### Programming
 
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-r.png' style='height: 60px;vertical-align: middle;'> Package <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 65px;vertical-align: middle;'>
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-r.png' style='height: 50px;vertical-align: middle;'> Package <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 75px;vertical-align: middle;'>
 
 <center>
 
@@ -181,7 +181,7 @@ thesaurus(root = "artefact", outPlot = "collapsibleTree")
 Reusability means **interactivity** and accessibility on the web. It also means reproductibility of results by sharing open datasets and functions
 :::
 
-## Data Analysis <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 45px;vertical-align: middle;'>
+## Data Analysis
 
 ::: {.panel-tabset}
 
@@ -287,11 +287,11 @@ The aim is to store the RDF triples in ISIDORE, the largest scientific open data
 
 ### Drawing
 
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/20475.01 MAN.png'>
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/20475.01 MAN.png' style="width: 900px;">
 
 ### Photograph
 
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/20475.01 MAN.jpg'>
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/20475.01 MAN.jpg' style="width: 1200px;">
 
 
 :::
@@ -327,6 +327,10 @@ Metadata
 
 
 ## From thesaurus to semantic network
+
+
+
+## Contact
 
 \
 
