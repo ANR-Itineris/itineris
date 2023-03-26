@@ -3,15 +3,9 @@
 
 GitHub repository of the Itineris ANR project: https://anr.fr/Project-ANR-21-CE27-0010
 
-## package itineRis
+## R package itineRis
 
-Development of an R package for data vizualisation and statistics, [itineRis](https://github.com/zoometh/itineRis#itineris-)
-
-<p align="center">
-  <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/itineRis/main/results/isotop_ternaryplot.png" width="700">
-  <br>
-    <em>Interactive ternary plot created by the <a href="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim3/">isotop_ternaryplot()</a> function </em>
-</p>
+Development of an R package for data vizualisation and statistics, [itineRis](https://github.com/zoometh/itineRis#itineris-) <img src="https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png" style='height: 50px;vertical-align: middle;'/>
 
 ## Talks
 
