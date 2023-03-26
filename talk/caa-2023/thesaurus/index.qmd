@@ -66,23 +66,32 @@ Cicolani et Huet, 2019[^1]
 # ANRJCJC Itineris {background-color="#f3e7b3"}
 
 
+## Partners
+
+
 ```{r}
+#| eval: false
 data.base <- "https://raw.githubusercontent.com/ANR-Itineris/itineris/main/data/"
 url.mbr_nodes.res <- paste0(data.base, 'mbr_nodes_resume.tsv')
 url.mbr_edges.res <- paste0(data.base, 'mbr_edges_resume.tsv')
 mbr_nodes.res <- read.table(url.mbr_nodes.res, header = T, sep = "\t", row.names = NULL)
 mbr_edges.res <- read.table(url.mbr_edges.res, header = T, sep = "\t", row.names = NULL)
-visNetwork::visNetwork(mbr_nodes.res, mbr_edges.res, 
+organisation <- visNetwork::visNetwork(mbr_nodes.res, mbr_edges.res, 
                                    width = "900px", height = "900px") %>%
   visNetwork::visEdges(shadow = TRUE,
                        smooth = TRUE,
                        arrows =list(to = list(enabled = TRUE, 
                                               scaleFactor = 1)),
                        color = list(color = "lightblue", highlight = "red"))
+htmlwidgets::saveWidget(organisation, "C:/Rdev-itineris/itineris-anr/org/organisation.html")
 ```
 
 
-## Partners
+```{=html}
+<iframe width="1200" height="700" src="https://anr-itineris.github.io/itineris/org/organisation"></iframe>
+```
+
+
 
 
 ## Veronica 2/2
@@ -236,7 +245,7 @@ Opentheso is a multilingual, multi-paradigm thesaurus manager. Created in 2005. 
 
 ## RDF triple-store
 
-<https://isidore.science/>
+To be hosted on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/lod-humanum-isidore.png" style="height: 80px; vertical-align:middle"> <https://isidore.science/>
 
 ```{=html}
 <iframe width="1200" height="700" src="https://isidore.science/"></iframe>
