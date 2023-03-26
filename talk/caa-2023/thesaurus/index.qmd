@@ -343,7 +343,7 @@ Metadata
 \
 
 
-* <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;"> <https://github.com/ANR-Itineris>  
+* <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 90px;vertical-align: middle;"> <https://github.com/ANR-Itineris>  
 
 * <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 80px;vertical-align: middle;'> <https://github.com/zoometh/itineRis> 
 
