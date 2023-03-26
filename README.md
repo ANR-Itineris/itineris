@@ -17,7 +17,7 @@ Development of an R package for data vizualisation and statistics, [itineRis](ht
 
 **2016** CTHS, Pau https://zoometh.github.io/golasecca/
 
-**2023** CAA, Amsterdam, ["From thesaurus to semantic network"](https://ANR-Itineris.github.io/itineris/talk/caa-2023/thesaurus)
+**2023** CAA, Amsterdam, ["From thesaurus to semantic network"](https://anr-itineris.github.io/itineris/talk/caa-2023/thesaurus/pres)
 
 ## Workpackages & Tasks
 
