@@ -88,8 +88,6 @@ Talk : Cicolani, Zamboni & Huet 2021 : Between Celtic, Italic and Etruscan world
 characterisation of Italic bronze craftsmanship in the Early Iron Age.
 :::
 
->>>>>>> 86f99ec1bdddc2f725476df2ba5cd238944ba4de
-
 # ANRJCJC Itineris {background-color="#f3e7b3"}
 
 
@@ -347,6 +345,7 @@ Opentheso is a multilingual, multi-paradigm thesaurus manager. Created in 2005. 
  - **associated concept** The wording is associated with "culture de Golasecca" and "féminin", because these fibulae are the "prerogative of feminine clothing and characterise the burials of Golasecca women".
  - **references**: "Cicolani 2017" points to the record of the indexed catalogue Frantiq (physical location); "Cicolani (V.)" refers to Veronica's IdRef (~ authors) record and "Passeurs des Alpes..." allows, when it exists, to provide a link to the online documentary resource (Cairn).
  - **iconography** external resource directly downloadable from a perennial Nakala repository, one can reach iconographic documents. The conditions for sharing and reuse are specified in the metadata.
+ Ark
 :::
 
 ## RDF triple-store
