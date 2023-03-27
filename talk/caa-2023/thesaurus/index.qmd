@@ -23,72 +23,12 @@ format:
     width: 1200
 ---
 
-# Research project {background-color="#f3e7b3"}
+# ANRJCJC Itineris {background-color="#f3e7b3"}
 
 ```{r, echo=FALSE}
 library(plotly)
 library(kableExtra)
 ```
-
-## Social interactions and network analysis
-
-::: {.panel-tabset}
-
-
-### Archaeological Context
-
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture.png' style="width: 900px;">
-
-
-### Items
-
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-items.png' style="width: 900px;">
-
-
-### Sites
-
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture-items.png' style="width: 900px;">
-
-:::
-
-## Modeling
-
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/gol-italic-culture.png' style="width: 900px;">
-
-::: {.panel-tabset}
-
-### Items
-
-```{=html}
-<iframe width="1200" height="700" src="https://zoometh.github.io/golasecca/img/map_GIC_IIAB.html"></iframe>
-```
-
-### Sites
-
-```{=html}
-<iframe width="1200" height="700" src="https://zoometh.github.io/golasecca/img/map_GIC_IIAB.html"></iframe>
-```
-
-
-### References
-
-Cicolani et Huet, 2019[^1]
-
-```{=html}
-<iframe width="1200" height="700" src="https://books.openedition.org/cths/7827"></iframe>
-```
-
-[^1]: Cicolani, V., & Huet, T. (2019). Essai de modélisation des échanges et des réseaux de circulation dans les Alpes centrales au premier Âge du Fer.
-Talk : Cicolani, Zamboni & Huet 2021 : Between Celtic, Italic and Etruscan worlds. Re-thinking Boundaries and Models of Interaction across the Alps, in Peter Pavúk, Ladislav Stančo, Jan Kysela, Marek Verčík, Helena Tůmová, Adaptation along Border Zones: Concepts, Strategies, Transformations, international congress, Institute of of Classical Archaeology, Charles University, 31.5-3.6 2021, Praga
-
-
-:::
-
-::: {.notes}
-characterisation of Italic bronze craftsmanship in the Early Iron Age.
-:::
-
-# ANRJCJC Itineris {background-color="#f3e7b3"}
 
 
 ## Partners
@@ -122,11 +62,6 @@ With French, English and Italian, are the other official languages of this proje
 WP3 takes care of open-source data and tools to provide to the scientific community open access results, codes and data produced during the project as well as after their publication.
 :::
 
-# Research project {background-color="#f3e7b3"}
-
-```{r, echo=FALSE}
-library(plotly)
-```
 
 ## Social interactions and network analysis
 
@@ -172,7 +107,32 @@ library(plotly)
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/gol-italic-culture.png' style="width: 900px;">
 
-### <small>References<small>
+:::
+
+::: {.notes}
+rdflib to manage RDF (RDF/XML)
+RODBC to connect FM
+:::
+
+
+## Interactivity
+
+::: {.panel-tabset}
+
+### Items
+
+```{=html}
+<iframe width="1200" height="700" src="https://zoometh.github.io/golasecca/img/map_GIC_IIAB.html"></iframe>
+```
+
+### Sites
+
+```{=html}
+<iframe width="1200" height="700" src="https://zoometh.github.io/golasecca/img/map_GIC_IIAB.html"></iframe>
+```
+
+
+### References
 
 Cicolani et Huet, 2019[^1]
 
@@ -181,13 +141,15 @@ Cicolani et Huet, 2019[^1]
 ```
 
 [^1]: Cicolani, V., & Huet, T. (2019). Essai de modélisation des échanges et des réseaux de circulation dans les Alpes centrales au premier Âge du Fer.
+Talk : Cicolani, Zamboni & Huet 2021 : Between Celtic, Italic and Etruscan worlds. Re-thinking Boundaries and Models of Interaction across the Alps, in Peter Pavúk, Ladislav Stančo, Jan Kysela, Marek Verčík, Helena Tůmová, Adaptation along Border Zones: Concepts, Strategies, Transformations, international congress, Institute of of Classical Archaeology, Charles University, 31.5-3.6 2021, Praga
+
 
 :::
 
 ::: {.notes}
-rdflib to manage RDF (RDF/XML)
-RODBC to connect FM
+characterisation of Italic bronze craftsmanship in the Early Iron Age.
 :::
+
 
 
 # Write once and reuse many times {background-color="#f3e7b3"}
@@ -235,7 +197,7 @@ Hosted on FileMaker v19.1 <img src="https://raw.githubusercontent.com/zoometh/th
 </table>
 
 
-### Programming
+### Scripts
 
 <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-r.png' style='height: 50px;vertical-align: middle;'> Package <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 75px;vertical-align: middle;'>
 
@@ -245,7 +207,7 @@ Hosted on FileMaker v19.1 <img src="https://raw.githubusercontent.com/zoometh/th
 
 </center>
 
-### Data <small>Management<\small>
+### Data <small>Managt</small>
 
 Subgraph of 'artefact'
 
@@ -258,7 +220,7 @@ thesaurus(root = "artefact", outPlot = "collapsibleTree")
 ```
 
 
-### Data <small>Analysis</small> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle">
+### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle">
 
 Interactive map of mines
 
@@ -278,7 +240,7 @@ map_leaflet(d = d,
 ```
 
 
-### Data <small>Analysis</small> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle">
+### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle">
 
 Interactive ternary plot to visualise the results of lead isotopic analysis
 
@@ -295,6 +257,7 @@ isotop_ternaryplot(df.isotop)
 ::: {.notes}
 Reusability means **interactivity** and accessibility on the web. It also means reproductibility of results by sharing open datasets and functions
 :::
+
 
 # Thesaurus {background-color="#f3e7b3"}
 
@@ -361,22 +324,20 @@ The aim is to store the RDF triples in ISIDORE, the largest scientific open data
 :::
 
 
-# Case study: <small><br>the *sanguisuga fibula* 20475.01 MAN</small> {background-color="#f3e7b3"}
+# Case study: <small><br>the *sanguisuga fibula* </small> 20475.01 {background-color="#f3e7b3"}
 
 
 ## DB record
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/bd-20475.png' style="width: 900px;">
 
-::: {.notes}
-
-:::
 
 ## LIA sample
 
 
 ```{r}
-lia <- read.csv2("https://raw.githubusercontent.com/ANR-Itineris/itineris/main/data/lia_results_sample.tsv", sep = "\t")
+data <- "https://raw.githubusercontent.com/ANR-Itineris/itineris/main/data/lia_results_sample.tsv"
+lia <- read.csv2(data, sep = "\t")
 kable(lia) %>%
   kable_styling(full_width = FALSE, position = "center", font_size = 20)
 ```
