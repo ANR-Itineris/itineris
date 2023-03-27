@@ -96,6 +96,7 @@ htmlwidgets::saveWidget(organisation, "C:/Rdev-itineris/itineris-anr/org/organis
 ```
 
 ::: {.notes}
+With French, English and Italian, are the other official languages of this project.
 WP3 takes care of open-source data and tools to provide to the scientific community open access results, codes and data produced during the project as well as after their publication.
 :::
 
@@ -216,10 +217,21 @@ isotop_ternaryplot(df.isotop)
 Reusability means **interactivity** and accessibility on the web. It also means reproductibility of results by sharing open datasets and functions
 :::
 
-# Grammar for Reusable data {background-color="#f3e7b3"}
+# Thesaurus {background-color="#f3e7b3"}
 
 
-## Thesaurus
+## Aims
+
+
+```{=html}
+<iframe width="1200" height="300" src="http://www.chronocarto.eu/spip.php?article27&lang=fr"></iframe>
+```
+
+::: {.notes}
+vocabularies must be linked to the BaseFer DB (AOROC) and formalised the location of artefacts (sites, context, etc.), to the collections to which they are attached, typology, technologies used, dating, etc.
+:::
+
+## Thesaurus management
 
 ::: {.panel-tabset}
 
@@ -229,9 +241,7 @@ Reusability means **interactivity** and accessibility on the web. It also means 
 <iframe width="1200" height="700" src="https://thesaurus.mom.fr/opentheso/?idt=th101"></iframe>
 ```
 
-::: {.notes}
-Bibracte has shown that the ISO 25964 standard for the management of thesauri is sufficiently flexible to describe the different "points of view" presiding over the elaboration of the specialised and evolving "micro-languages" of archaeologists
-:::
+
 
 ### <small>ISO25964-1</small>
 
@@ -249,7 +259,13 @@ Bibracte has shown that the ISO 25964 standard for the management of thesauri is
 :::
 
 ::: {.notes}
-Opentheso is a multilingual, multi-paradigm thesaurus manager. Created in 2005. It supports poly-hierarchies in accordance with ISO25964 (25964-1 and 25964-2)
+Opentheso is a multilingual, multi-paradigm thesaurus manager. Created in 2005. It supports poly-hierarchies in accordance with ISO25964 (25964-1 and 25964-2) Bibracte has shown that the ISO standard 25964 for the management of thesauri is sufficiently flexible to describe the different "points of view" presiding over the elaboration of the specialised and evolving "micro-languages" of archaeologists.
+~ 500 concepts related to protohistoric adornment and metallurgical technologies. 
+* "fibule *a sanguisuga*"
+ - **alternative label**: "Bogenfibel"
+ - **associated concept** The wording is associated with "culture de Golasecca" and "féminin", because these fibulae are the "prerogative of feminine clothing and characterise the burials of Golasecca women".
+ - **references**: "Cicolani 2017" points to the record of the indexed catalogue Frantiq ; "Cicolani (V.)" refers to Veronica's IdRef record and "Passeurs des Alpes..." allows, when it exists, to provide a link to the online documentary resource.
+ - **iconography** external resource directly downloadable from a perennial Nakala repository, one can reach iconographic documents. The conditions for sharing and reuse are specified in the metadata.
 :::
 
 ## RDF triple-store
