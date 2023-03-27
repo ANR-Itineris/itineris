@@ -243,7 +243,7 @@ Reusability means **interactivity** and accessibility on the web. It also means 
 
 
 ```{=html}
-<iframe width="1200" height="300" src="http://www.chronocarto.eu/spip.php?article27&lang=fr"></iframe>
+<iframe width="1200" height="600" src="http://www.chronocarto.eu/spip.php?article27&lang=fr"></iframe>
 ```
 
 ::: {.notes}
@@ -283,7 +283,7 @@ Opentheso is a multilingual, multi-paradigm thesaurus manager. Created in 2005. 
 * "fibule *a sanguisuga*"
  - **alternative label**: "Bogenfibel"
  - **associated concept** The wording is associated with "culture de Golasecca" and "féminin", because these fibulae are the "prerogative of feminine clothing and characterise the burials of Golasecca women".
- - **references**: "Cicolani 2017" points to the record of the indexed catalogue Frantiq ; "Cicolani (V.)" refers to Veronica's IdRef record and "Passeurs des Alpes..." allows, when it exists, to provide a link to the online documentary resource.
+ - **references**: "Cicolani 2017" points to the record of the indexed catalogue Frantiq (physical location); "Cicolani (V.)" refers to Veronica's IdRef (~ authors) record and "Passeurs des Alpes..." allows, when it exists, to provide a link to the online documentary resource (Cairn).
  - **iconography** external resource directly downloadable from a perennial Nakala repository, one can reach iconographic documents. The conditions for sharing and reuse are specified in the metadata.
 :::
 
@@ -306,6 +306,10 @@ The aim is to store the RDF triples in ISIDORE, the largest scientific open data
 ## BD record
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/bd-20475.png' style="width: 900px;">
+
+::: {.notes}
+Fiche objet
+:::
 
 ## LIA sample
 

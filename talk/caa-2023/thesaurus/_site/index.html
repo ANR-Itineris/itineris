@@ -408,18 +408,33 @@
 <section id="social-interactions-and-network-analysis" class="slide level2">
 <h2>Social interactions and network analysis</h2>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Archaeological Context</a></li><li><a href="#tabset-1-2">Items</a></li><li><a href="#tabset-1-3">Sites</a></li><li><a href="#tabset-1-4">References</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Archaeological Context</a></li><li><a href="#tabset-1-2">Items</a></li><li><a href="#tabset-1-3">Sites</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-
+<p><img src="https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture.png" style="width: 900px;"></p>
 </div>
 <div id="tabset-1-2">
-<iframe width="1200" height="700" src="https://zoometh.github.io/golasecca/img/graph_GIC_IIAB.html"></iframe>
+<p><img src="https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-items.png" style="width: 900px;"></p>
 </div>
 <div id="tabset-1-3">
+<p><img src="https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture-items.png" style="width: 900px;"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="modeling" class="slide level2">
+<h2>Modeling</h2>
+<p><img src="https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/gol-italic-culture.png" style="width: 900px;"></p>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Items</a></li><li><a href="#tabset-2-2">Sites</a></li><li><a href="#tabset-2-3">References</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
 <iframe width="1200" height="700" src="https://zoometh.github.io/golasecca/img/map_GIC_IIAB.html"></iframe>
 </div>
-<div id="tabset-1-4">
+<div id="tabset-2-2">
+<iframe width="1200" height="700" src="https://zoometh.github.io/golasecca/img/map_GIC_IIAB.html"></iframe>
+</div>
+<div id="tabset-2-3">
 <p>Cicolani et Huet, 2019<a href="#/footnotes" class="footnote-ref" id="fnref1" role="doc-noteref" data-footnote-href="#/fn1" onclick=""><sup>1</sup></a></p>
 <iframe width="1200" height="700" src="https://books.openedition.org/cths/7827"></iframe>
 </div>
@@ -490,12 +505,12 @@
 <section id="it-stack" class="slide level2">
 <h2>IT stack</h2>
 <div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Database</a></li><li><a href="#tabset-2-2">Git</a></li><li><a href="#tabset-2-3">Programming</a></li></ul>
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Database</a></li><li><a href="#tabset-3-2">Git</a></li><li><a href="#tabset-3-3">Programming</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1">
+<div id="tabset-3-1">
 <p>Claris FileMaker Version: 19.1.3.315 (10-16-2020) Licencié : Veronica Cicolani (ENS)</p>
 </div>
-<div id="tabset-2-2">
+<div id="tabset-3-2">
 <p><br>
 </p>
 
@@ -521,7 +536,7 @@
 
 </table>
 </div>
-<div id="tabset-2-3">
+<div id="tabset-3-3">
 <p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-r.png" style="height: 50px;vertical-align: middle;"> Package <img src="https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png" style="height: 75px;vertical-align: middle;"></p>
 <center>
 <p><img src="https://raw.githubusercontent.com/zoometh/itineRis/master/results/r-stack-logo.png" style="height: 300px;"></p>
@@ -552,9 +567,9 @@
 <section id="data-analysis" class="slide level2">
 <h2>Data Analysis</h2>
 <div class="panel-tabset">
-<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle"></a></li><li><a href="#tabset-3-2"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle"></a></li></ul>
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle"></a></li><li><a href="#tabset-4-2"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle"></a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1">
+<div id="tabset-4-1">
 <p>Interactive map of mines</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>d <span class="ot">&lt;-</span> hash<span class="sc">::</span><span class="fu">hash</span>()</span>
 <span id="cb2-2"><a href="#cb2-2"></a>d <span class="ot">&lt;-</span> <span class="fu">read_mines</span>(<span class="at">d =</span> d,</span>
@@ -566,7 +581,7 @@
 <span id="cb2-8"><a href="#cb2-8"></a>            <span class="at">dirOut =</span> <span class="st">"C:/Rprojects/itineRis/results/"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <iframe width="1200" height="700" src="https://zoometh.github.io/itineRis/results/map_sites.html"></iframe>
 </div>
-<div id="tabset-3-2">
+<div id="tabset-4-2">
 <p>Interactive ternary plot to visualise the results of lead isotopic analysis</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">isotop_ternaryplot</span>(df.isotop)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <iframe width="1200" height="700" src="https://zoometh.github.io/itineRis/results/tern_lia.html"></iframe>
@@ -612,15 +627,15 @@
 <section id="thesaurus-management" class="slide level2">
 <h2>Thesaurus management</h2>
 <div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">OpenTheso</a></li><li><a href="#tabset-4-2"><small>ISO25964-1</small></a></li><li><a href="#tabset-4-3"><small>ISO25964-2</small></a></li></ul>
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">OpenTheso</a></li><li><a href="#tabset-5-2"><small>ISO25964-1</small></a></li><li><a href="#tabset-5-3"><small>ISO25964-2</small></a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1">
+<div id="tabset-5-1">
 <iframe width="1200" height="700" src="https://thesaurus.mom.fr/opentheso/?idt=th101"></iframe>
 </div>
-<div id="tabset-4-2">
+<div id="tabset-5-2">
 <iframe width="1200" height="700" src="https://www.iso.org/standard/53657.html"></iframe>
 </div>
-<div id="tabset-4-3">
+<div id="tabset-5-3">
 <iframe width="1200" height="700" src="https://www.iso.org/standard/53658.html"></iframe>
 </div>
 </div>
@@ -677,12 +692,12 @@
 <section id="d-documentation" class="slide level2">
 <h2>2D documentation</h2>
 <div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Drawing</a></li><li><a href="#tabset-5-2">Photograph</a></li></ul>
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Drawing</a></li><li><a href="#tabset-6-2">Photograph</a></li></ul>
 <div class="tab-content">
-<div id="tabset-5-1">
+<div id="tabset-6-1">
 <p><img src="https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/20475.01 MAN.png" style="width: 900px;"></p>
 </div>
-<div id="tabset-5-2">
+<div id="tabset-6-2">
 <p><img src="https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/20475.01 MAN.jpg" style="width: 1200px;"></p>
 </div>
 </div>
@@ -704,12 +719,12 @@
 <section id="d-documentation-1" class="slide level2">
 <h2>3D documentation</h2>
 <div class="panel-tabset">
-<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Sketchfab</a></li><li><a href="#tabset-6-2">Local</a></li></ul>
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Sketchfab</a></li><li><a href="#tabset-7-2">Local</a></li></ul>
 <div class="tab-content">
-<div id="tabset-6-1">
+<div id="tabset-7-1">
 <iframe width="1200" height="700" src="https://sketchfab.com/models/cf75955152a14ff6a6ab4d3f08968b6d/embed"> </iframe>
 </div>
-<div id="tabset-6-2">
+<div id="tabset-7-2">
 <iframe width="1200" height="700" src="https://anr-itineris.github.io/Modeling/3DHOP/minimal/fibule.html" title="Arches doc"></iframe>
 </div>
 </div>
