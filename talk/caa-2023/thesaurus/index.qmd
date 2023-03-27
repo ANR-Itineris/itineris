@@ -23,68 +23,6 @@ format:
     width: 1200
 ---
 
-# Research project {background-color="#f3e7b3"}
-
-```{r, echo=FALSE}
-library(plotly)
-```
-
-## Social interactions and network analysis
-
-::: {.panel-tabset}
-
-
-### Archaeological Context
-
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture.png' style="width: 900px;">
-
-
-### Items
-
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-items.png' style="width: 900px;">
-
-
-### Sites
-
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture-items.png' style="width: 900px;">
-
-:::
-
-## Modeling
-
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/gol-italic-culture.png' style="width: 900px;">
-
-::: {.panel-tabset}
-
-### Items
-
-```{=html}
-<iframe width="1200" height="700" src="https://zoometh.github.io/golasecca/img/map_GIC_IIAB.html"></iframe>
-```
-
-### Sites
-
-```{=html}
-<iframe width="1200" height="700" src="https://zoometh.github.io/golasecca/img/map_GIC_IIAB.html"></iframe>
-```
-
-
-### References
-
-Cicolani et Huet, 2019[^1]
-
-```{=html}
-<iframe width="1200" height="700" src="https://books.openedition.org/cths/7827"></iframe>
-```
-
-[^1]: Cicolani, V., & Huet, T. (2019). Essai de modélisation des échanges et des réseaux de circulation dans les Alpes centrales au premier Âge du Fer.
-
-:::
-
-::: {.notes}
-characterisation of Italic bronze craftsmanship in the Early Iron Age.
-:::
-
 
 # ANRJCJC Itineris {background-color="#f3e7b3"}
 
@@ -115,8 +53,76 @@ htmlwidgets::saveWidget(organisation, "C:/Rdev-itineris/itineris-anr/org/organis
 ```
 
 ::: {.notes}
+characterisation of Italic bronze craftsmanship in the Early Iron Age.
 With French, English and Italian, are the other official languages of this project.
 WP3 takes care of open-source data and tools to provide to the scientific community open access results, codes and data produced during the project as well as after their publication.
+:::
+
+# Research project {background-color="#f3e7b3"}
+
+```{r, echo=FALSE}
+library(plotly)
+```
+
+## Social interactions and network analysis
+
+::: {.panel-tabset}
+
+
+### Archaeological Context
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture.png' style="width: 900px;">
+
+
+### Items
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-items.png' style="width: 900px;">
+
+<table>
+<tbody>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-items/armring.png" style="height: 80px; vertical-align:middle"></td>
+    <td><small>Arm ring</small></td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-items/basket_pendent.png" style="height: 80px; vertical-align:middle"></td>
+    <td><small>Basket-shape pendent</small></td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-items/belt.png" style="height: 80px; vertical-align:middle"></td>
+    <td><small>Belt</small></td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-items/pendent.png" style="height: 80px; vertical-align:middle"></td>
+    <td><small>Pendent</small></td>
+  </tr>
+</tbody>
+</table>
+
+
+### Sites
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture-items.png' style="width: 900px;">
+
+### Modeling
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/gol-italic-culture.png' style="width: 900px;">
+
+### <small>References<small>
+
+Cicolani et Huet, 2019[^1]
+
+```{=html}
+<iframe width="1200" height="700" src="https://books.openedition.org/cths/7827"></iframe>
+```
+
+[^1]: Cicolani, V., & Huet, T. (2019). Essai de modélisation des échanges et des réseaux de circulation dans les Alpes centrales au premier Âge du Fer.
+
+:::
+
+::: {.notes}
+rdflib to manage RDF (RDF/XML)
+RODBC to connect FM
 :::
 
 
@@ -143,8 +149,9 @@ DMP models including one in archaeology developed by the *Mémoires des Archéol
 
 ### Database
 
-Claris FileMaker Version: 19.1.3.315 (10-16-2020)
-Licencié : Veronica Cicolani (ENS)
+Hosted on FileMaker v19.1 <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-filemaker19.png" style="height: 80px; vertical-align:middle">
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/bd-voc.png' style="width: 900px;">
 
 ### Git
 
@@ -174,11 +181,7 @@ Licencié : Veronica Cicolani (ENS)
 
 </center>
 
-
-:::
-
-
-## Data Management
+### Data <small>Management<\small>
 
 Subgraph of 'artefact'
 
@@ -190,15 +193,8 @@ thesaurus(root = "artefact", outPlot = "collapsibleTree")
 <iframe width="1200" height="700" src="https://zoometh.github.io/itineRis/results/artefact"></iframe>
 ```
 
-::: {.notes}
-Reusability means **interactivity** and accessibility on the web. It also means reproductibility of results by sharing open datasets and functions
-:::
 
-## Data Analysis
-
-::: {.panel-tabset}
-
-### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle">
+### Data <small>Analysis</small> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle">
 
 Interactive map of mines
 
@@ -218,7 +214,7 @@ map_leaflet(d = d,
 ```
 
 
-### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle">
+### Data <small>Analysis</small> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle">
 
 Interactive ternary plot to visualise the results of lead isotopic analysis
 
@@ -300,18 +296,22 @@ The aim is to store the RDF triples in ISIDORE, the largest scientific open data
 :::
 
 
-# Case study: <br>the *sanguisuga fibula* 20475.01 MAN {background-color="#f3e7b3"}
+# Case study: <small><br>the *sanguisuga fibula* 20475.01 MAN</small> {background-color="#f3e7b3"}
 
 
-## BD record
+## DB record
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/bd-20475.png' style="width: 900px;">
 
 ::: {.notes}
-Fiche objet
+
 :::
 
 ## LIA sample
+
+
+
+
 
 
 ## 2D documentation
