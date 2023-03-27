@@ -36,19 +36,38 @@ library(plotly)
 
 ### Archaeological Context
 
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture.png' style="width: 900px;">
+
+
+### Items
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-items.png' style="width: 900px;">
+
+
+### Sites
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture-items.png' style="width: 900px;">
+
+:::
+
+## Modeling
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/gol-italic-culture.png' style="width: 900px;">
+
+::: {.panel-tabset}
 
 ### Items
 
 ```{=html}
-<iframe width="1200" height="700" src="https://zoometh.github.io/golasecca/img/graph_GIC_IIAB.html"></iframe>
+<iframe width="1200" height="700" src="https://zoometh.github.io/golasecca/img/map_GIC_IIAB.html"></iframe>
 ```
-
 
 ### Sites
 
 ```{=html}
 <iframe width="1200" height="700" src="https://zoometh.github.io/golasecca/img/map_GIC_IIAB.html"></iframe>
 ```
+
 
 ### References
 
@@ -286,6 +305,7 @@ The aim is to store the RDF triples in ISIDORE, the largest scientific open data
 
 ## BD record
 
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/bd-20475.png' style="width: 900px;">
 
 ## LIA sample
 
