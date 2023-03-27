@@ -23,6 +23,73 @@ format:
     width: 1200
 ---
 
+<<<<<<< HEAD
+=======
+# Research project {background-color="#f3e7b3"}
+
+```{r, echo=FALSE}
+library(plotly)
+```
+
+## Social interactions and network analysis
+
+::: {.panel-tabset}
+
+
+### Archaeological Context
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture.png' style="width: 900px;">
+
+
+### Items
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-items.png' style="width: 900px;">
+
+
+### Sites
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture-items.png' style="width: 900px;">
+
+:::
+
+## Modeling
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/gol-italic-culture.png' style="width: 900px;">
+
+::: {.panel-tabset}
+
+### Items
+
+```{=html}
+<iframe width="1200" height="700" src="https://zoometh.github.io/golasecca/img/map_GIC_IIAB.html"></iframe>
+```
+
+### Sites
+
+```{=html}
+<iframe width="1200" height="700" src="https://zoometh.github.io/golasecca/img/map_GIC_IIAB.html"></iframe>
+```
+
+
+### References
+
+Cicolani et Huet, 2019[^1]
+
+```{=html}
+<iframe width="1200" height="700" src="https://books.openedition.org/cths/7827"></iframe>
+```
+
+[^1]: Cicolani, V., & Huet, T. (2019). Essai de modélisation des échanges et des réseaux de circulation dans les Alpes centrales au premier Âge du Fer.
+Talk : Cicolani, Zamboni & Huet 2021 : Between Celtic, Italic and Etruscan worlds. Re-thinking Boundaries and Models of Interaction across the Alps, in Peter Pavúk, Ladislav Stančo, Jan Kysela, Marek Verčík, Helena Tůmová, Adaptation along Border Zones: Concepts, Strategies, Transformations, international congress, Institute of of Classical Archaeology, Charles University, 31.5-3.6 2021, Praga
+
+
+:::
+
+::: {.notes}
+characterisation of Italic bronze craftsmanship in the Early Iron Age.
+:::
+
+>>>>>>> 86f99ec1bdddc2f725476df2ba5cd238944ba4de
 
 # ANRJCJC Itineris {background-color="#f3e7b3"}
 
