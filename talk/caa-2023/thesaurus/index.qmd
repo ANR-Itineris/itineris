@@ -99,14 +99,6 @@ htmlwidgets::saveWidget(organisation, "C:/Rdev-itineris/itineris-anr/org/organis
 WP3 takes care of open-source data and tools to provide to the scientific community open access results, codes and data produced during the project as well as after their publication.
 :::
 
-## Bibracte
-
-
-```{=html}
-<iframe width="1200" height="700" src="https://www.bibracte.fr/bibracte-numerique"></iframe>
-```
-
-
 
 # Write once and reuse many times {background-color="#f3e7b3"}
 
