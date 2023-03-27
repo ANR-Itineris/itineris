@@ -23,12 +23,11 @@ format:
     width: 1200
 ---
 
-<<<<<<< HEAD
-=======
 # Research project {background-color="#f3e7b3"}
 
 ```{r, echo=FALSE}
 library(plotly)
+library(kableExtra)
 ```
 
 ## Social interactions and network analysis
@@ -377,7 +376,11 @@ The aim is to store the RDF triples in ISIDORE, the largest scientific open data
 ## LIA sample
 
 
-
+```{r}
+lia <- read.csv2("https://raw.githubusercontent.com/ANR-Itineris/itineris/main/data/lia_results_sample.tsv", sep = "\t")
+kable(lia) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 20)
+```
 
 
 
