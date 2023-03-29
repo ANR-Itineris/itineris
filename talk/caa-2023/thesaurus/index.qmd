@@ -118,6 +118,11 @@ Settlements from 3 cultural areas and one Golasecca cemetery
 In order to better understand the practices and techniques of the artisans, the settlements especially those with a well-documented artisanal activity are highlighted, and distributed among the three cultural entities. The sites are characterized by local production and the integration of foreign models and styles and share a common clothing fashion. Located along the main natural communication paths, they are also privileged intermediaries of the medium and long-distance trade, both internal and external to the peninsula
 :::
 
+## References
+Talk: Cicolani, Zamboni & Huet 2021 : Between Celtic, Italic and Etruscan worlds. Re-thinking Boundaries and Models of Interaction across the Alps, in Peter Pavúk, Ladislav Stančo, Jan Kysela, Marek Verčík, Helena Tůmová, Adaptation along Border Zones: Concepts, Strategies, Transformations, international congress, Institute of of Classical Archaeology, Charles University, 31.5-3.6 2021, Praga
+
+Talk: Cicolani, Huet, Zamboni (in press) : Centre et marges, une approche critique : modélisation des interactions entre entités culturelles en Italie du Nord à l’âge du Fer, 146eme colloque CTHS, Périphéries, Session Préhistoire-Protohistoire, 4-7 mai 2022, Aubervilliers.
+
 ### Modeling social & cultural interactions
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/gol-italic-culture.png' style="width: 900px;">
@@ -130,7 +135,7 @@ RODBC to connect FM
 :::
 
 
-## Interactivity
+## Interactivity: previous work
 
 ::: {.panel-tabset}
 
@@ -156,11 +161,9 @@ Cicolani et Huet, 2019[^1]
 ```
 
 [^1]: Cicolani, V., & Huet, T. (2019). Essai de modélisation des échanges et des réseaux de circulation dans les Alpes centrales au premier Âge du Fer.
+
 Talk : Cicolani, Zamboni & Huet 2021 : Between Celtic, Italic and Etruscan worlds. Re-thinking Boundaries and Models of Interaction across the Alps, in Peter Pavúk, Ladislav Stančo, Jan Kysela, Marek Verčík, Helena Tůmová, Adaptation along Border Zones: Concepts, Strategies, Transformations, international congress, Institute of of Classical Archaeology, Charles University, 31.5-3.6 2021, Praga
 
-Cicolani, Huet, Zamboni (in press) : Centre et marges, une approche critique : modélisation des interactions entre entités culturelles en Italie du Nord à l’âge du Fer, 146eme colloque CTHS, Périphéries, Session Préhistoire-Protohistoire, 4-7 mai 2022, Aubervilliers, in press
-
-Talk: Cicolani, Zamboni & Huet 2021 : Between Celtic, Italic and Etruscan worlds. Re-thinking Boundaries and Models of Interaction across the Alps, in Peter Pavúk, Ladislav Stančo, Jan Kysela, Marek Verčík, Helena Tůmová, Adaptation along Border Zones: Concepts, Strategies, Transformations, international congress, Institute of of Classical Archaeology, Charles University, 31.5-3.6 2021, Praga
 :::
 
 ::: {.notes}
@@ -192,7 +195,7 @@ DMP models including one in archaeology developed by the *Mémoires des Archéol
 
 ### Database
 
-Hosted on FileMaker v19.1 <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-filemaker19.png" style="height: 80px; vertical-align:middle">
+Hosted on FileMaker v19.1  <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-filemaker19.png" style="height: 80px; vertical-align:middle"> and linked to Chronocarto hub via Archeolocalis 
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/bd-voc.png' style="width: 900px;">
 ::: {.notes}
