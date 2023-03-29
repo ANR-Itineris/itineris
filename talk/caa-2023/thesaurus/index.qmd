@@ -58,9 +58,9 @@ htmlwidgets::saveWidget(organisation, "C:/Rdev-itineris/itineris-anr/org/organis
 ```
 
 ::: {.notes}
-characterisation of Italic bronze craftsmanship in the Early Iron Age.
+
+WP3 takes care of open-source data and tools to provide open access results, codes and data produced during the project as well as after their publication.This specific WP is dedicated to cultural networks analysis, from the object to society, by statistical approaches to get numerical indexes and conventional threshold helping to recognise consistent patterns in the dataset. The patterns modeled by spatial and phylogenetic networks are clustering with community/similarity methods and leveraging network to explore both material culture (chaînes opératoires) and the socio-economic dimension of the Protohistoric societies. The main goal is to be able to automatically order and spatially orient such complex and heterogeneous data and try to set out a dynamic typology of nested networks and sub-networks as well as different scenarios of the cultural and economic interactions. characterisation of Italic bronze craftsmanship in the Early Iron Age.
 With French, English and Italian, are the other official languages of this project.
-WP3 takes care of open-source data and tools to provide to the scientific community open access results, codes and data produced during the project as well as after their publication.This specific WP is dedicated to cultural networks analysis, from the object to society, by statistical approaches to get numerical indexes and conventional threshold helping to recognise consistent patterns in the dataset. The patterns modeled by spatial and phylogenetic networks are clustering with community/similarity methods and leveraging network to explore both material culture (chaînes opératoires) and the socio-economic dimension of the Protohistoric societies. The main goal is to be able to automatically order and spatially orient such complex and heterogeneous data and try to set out a dynamic typology of nested networks and sub-networks as well as different scenarios of the cultural and economic interactions.
 :::
 
 
@@ -135,7 +135,7 @@ RODBC to connect FM
 :::
 
 
-## Interactivity: previous work
+## Interactivity: previous works
 
 ::: {.panel-tabset}
 
@@ -162,7 +162,7 @@ Cicolani et Huet, 2019[^1]
 
 [^1]: Cicolani, V., & Huet, T. (2019). Essai de modélisation des échanges et des réseaux de circulation dans les Alpes centrales au premier Âge du Fer.
 
-Talk : Cicolani, Zamboni & Huet 2021 : Between Celtic, Italic and Etruscan worlds. Re-thinking Boundaries and Models of Interaction across the Alps, in Peter Pavúk, Ladislav Stančo, Jan Kysela, Marek Verčík, Helena Tůmová, Adaptation along Border Zones: Concepts, Strategies, Transformations, international congress, Institute of of Classical Archaeology, Charles University, 31.5-3.6 2021, Praga
+Talk : Cicolani, Zamboni & Huet 2021, Between Celtic, Italic and Etruscan worlds. Re-thinking Boundaries and Models of Interaction across the Alps, https://www.ff.cuni.cz/event/adaptation-creativity-borderzones-concepts-strategies-transformations/ 31.5-3.6 2021, Praga
 
 :::
 
@@ -185,7 +185,7 @@ Hosted on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/
 ```
 
 ::: {.notes}
-DMP models including one in archaeology developed by the *Mémoires des Archéologues et des Sites Archéologiques* consortium. The DMP OPIDoR is an open tool to help write and implement data management plans or software in accordance with the FAIR principles of the ANR and the CNRS. We use a ANR model.
+DMP models including one in archaeology developed by the *Mémoires des Archéologues et des Sites Archéologiques* consortium. The DMP OPIDoR is an open tool to help write and implement data management plans or software in accordance with the FAIR principles of the ANR and the CNRS.
 :::
 
 
@@ -195,7 +195,7 @@ DMP models including one in archaeology developed by the *Mémoires des Archéol
 
 ### Database
 
-Hosted on FileMaker v19.1  <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-filemaker19.png" style="height: 80px; vertical-align:middle"> and linked to Chronocarto hub via Archeolocalis 
+Hosted on FileMaker v19.1  <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-filemaker19.png" style="height: 80px; vertical-align:middle"> and linked to Chronocarto hub via Archeolocalis: https://journals.openedition.org/mefra/9916
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/bd-voc.png' style="width: 900px;">
 ::: {.notes}
@@ -366,9 +366,6 @@ The DBMS is a FileMaker server hosted in the Huma-Num structure for shared and r
 
 Chronocarto
 Atlas : https://www.chronocarto.eu/spip.php?article1
-
-Ref. biblio on-line : https://journals.openedition.org/mefra/9916
-
 Archeolocalis lien vers Golasecca interactif: https://archeolocalis.chronocarto.eu/index.php?zadm1=IT&zadm1bis=ITC&zadm2=ITC4&zadm3=ITC41&zmotif=Golasecca&za=l4nom&zt=tl&zvalid2=Chercher
 
 
