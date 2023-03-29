@@ -32,7 +32,7 @@ library(kableExtra)
 Itineris (2021-2025) is an international project funded by the ANR (Research National).  Focused on north-Italic craft techniques, this project tries to understand who produces, transforms and consumes (gender approach, social/cultural layers and context analysis); how they do it (craft techniques, traditions, spatial and context analysis,) and finally why they do it (aesthetic, cultural, political reasons, symbolic systems social and economic modelling), by combining archaeometric, mathematical and computer modelling methods with social and archaeological approaches. By addressing these crucial questions, this project will offer a deep and critical review of the traditional markers and approaches already applied to the identification of human past mobility.
 
 ## Partners
-Team: 16 permanent members, 3 French laboratories, 4 Italian research departments and 3 Museums
+**Team: 16 permanent members, 3 French laboratories, 4 Italian research departments and 3 Museums**
 {.notes}
 The project involves 16 permanent members highly qualified coming from 3 French laboratories, 4 Italian University departments and 3 Museums. Master and PHD students are also included. The project is organised in three specific work-packages, based on the scheduled progression of scientific analysis from the Archaeometric , archaeological and technological analysis to the data modelling (WP3)
 ```{r}
@@ -72,14 +72,14 @@ WP3 takes care of open-source data and tools to provide to the scientific commun
 ### Archaeological Context
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture.png' style="width: 900px;">
-3 different but linked cultural areas: Golasecca, Ligurians and Western Emilia
+**3 different but linked cultural areas: Golasecca, Ligurians and Western Emilia**
 ::: {.notes}
 Because the project focusing on north-Italian craft techniques, the archaeological context 
 belonging to 3 different but linked cultural areas: Golasecca culture (north-eastern part of Piedmont), whose productions spread across the Alps in the Celtic area during the first iron age, Ligurians (Southern Piedmont) and indigenous communities living in the Etruscan area (Western Emilia). This part of northern Italy has been targeted by recent researches, publications and excavations while providing a renewed dataset and cultural framework to overcome the traditional archaeological approaches. Thanks to their good preservation, these artefacts and sites are a golden opportunity to produce an new investigation of Protohistoric metal crafting, and, taking an overview of the management of metal workshops by North Italic communities and their interactions with the Celtic world in
 :::
 
 ### Dataset
-
+**1200 items made in copper alloys held in 3 different museums from 6 archaeological sites**
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-items.png' style="width: 900px;">
 
 <table>
@@ -345,6 +345,7 @@ The aim is to store the RDF triples in ISIDORE, the largest scientific open data
 
 
 # Case study: <small><br>the *sanguisuga fibula* </small> 20475.01 {background-color="#f3e7b3"}
+::: {.notes}
 Sanguisuga fibula with circular coral inlays and incised lines decoration. The pin and part of pin holder are broken. This kind of fibula, which combine copper alloy with coral, are typical of the female Giolasecca costume. They appear during the middle of the VI century B.C. and spread widely until the middle of the V century B.C.   This object come from the necropolis of Golasecca, de Mortillet collection, Musée d'Archéologie nationale de Saint-Germain-en-Laye.
 Measurements :
 Length in cm 4.1
@@ -352,7 +353,7 @@ Width in cm 2.1
 Weight in gr 5.7
 
 Sampling sites: by perforation near the start of the pin on the underside of the fibula arch
-
+:::
 
 ## DB record
 
@@ -440,6 +441,7 @@ Metadata
 
 * <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 80px;vertical-align: middle;'> <https://github.com/zoometh/itineRis> 
 
+* <https://itineris.huma-num.fr/>
 
 \
 
