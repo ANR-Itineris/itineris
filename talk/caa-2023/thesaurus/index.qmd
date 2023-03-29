@@ -72,6 +72,7 @@ WP3 takes care of open-source data and tools to provide to the scientific commun
 ### Archaeological Context
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture.png' style="width: 900px;">
+3 different but linked cultural areas: Golasecca, Ligurians and Western Emilia
 ::: {.notes}
 Because the project focusing on north-Italian craft techniques, the archaeological context 
 belonging to 3 different but linked cultural areas: Golasecca culture (north-eastern part of Piedmont), whose productions spread across the Alps in the Celtic area during the first iron age, Ligurians (Southern Piedmont) and indigenous communities living in the Etruscan area (Western Emilia). This part of northern Italy has been targeted by recent researches, publications and excavations while providing a renewed dataset and cultural framework to overcome the traditional archaeological approaches. Thanks to their good preservation, these artefacts and sites are a golden opportunity to produce an new investigation of Protohistoric metal crafting, and, taking an overview of the management of metal workshops by North Italic communities and their interactions with the Celtic world in
@@ -102,6 +103,13 @@ belonging to 3 different but linked cultural areas: Golasecca culture (north-eas
 </tbody>
 </table>
 
+::: {.notes}
+The dataset involve 1200 items made in copper alloys held in 3 different museums. This set is mostly composed of fibulae and clothing items covering a chronological range from the 7th to the end of the 5th century BC and belonging to the three cultural areas investigated. 
+As cultural and social markers these items are a good ways to :
+1 to identify the craft practices of copper alloy in Northern Italy (alloy/trace composition, isotopic origin, metallographic features)
+2 establish the social and cultural impact of foreign metal finds and/or technological innovations in indigenous contexts 
+3 rethink Protohistoric networks by modelling the data at different scales from the micro one (objects) to the social dimension.
+:::
 
 ### Sites
 
