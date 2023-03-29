@@ -78,7 +78,7 @@ Because the project focusing on north-Italian craft techniques, the archaeologic
 belonging to 3 different but linked cultural areas: Golasecca culture (north-eastern part of Piedmont), whose productions spread across the Alps in the Celtic area during the first iron age, Ligurians (Southern Piedmont) and indigenous communities living in the Etruscan area (Western Emilia). This part of northern Italy has been targeted by recent researches, publications and excavations while providing a renewed dataset and cultural framework to overcome the traditional archaeological approaches. Thanks to their good preservation, these artefacts and sites are a golden opportunity to produce an new investigation of Protohistoric metal crafting, and, taking an overview of the management of metal workshops by North Italic communities and their interactions with the Celtic world in
 :::
 
-### Items
+### Dataset
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-items.png' style="width: 900px;">
 
@@ -112,8 +112,11 @@ As cultural and social markers these items are a good ways to :
 :::
 
 ### Sites
-
+Settlements from tree cultural areas and one Golasecca cemetery 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture-items.png' style="width: 900px;">
+::: {.notes}
+In order to better understand the practices and techniques of the artisans, the settlements especially those with a well-documented artisanal activity are highlighted, and distributed among the three cultural entities. The sites are characterized by local production and the integration of foreign models and styles and share a common clothing fashion. Located along the main natural communication paths, they are also privileged intermediaries of the medium and long-distance trade, both internal and external to the peninsula
+:::
 
 ### Modeling
 
