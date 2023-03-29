@@ -11,7 +11,9 @@ Development of an R package for data vizualisation and statistics, [itineRis](ht
 
 **2016** CTHS, Pau https://zoometh.github.io/golasecca/
 
-**2021** Praga, Cicolani, Zamboni & Huet 2021 : Between Celtic, Italic and Etruscan worlds. Re-thinking Boundaries and Models of Interaction across the Alps, in Peter Pavúk et al., *Adaptation along Border Zones: Concepts, Strategies, Transformations*, international congress, Institute of Classical Archaeology, Charles University, 31.5-3.6 2021, Praga
+**2021** Praga, Cicolani, Zamboni & Huet 2021 : Between Celtic, Italic and Etruscan worlds. Re-thinking Boundaries and Models of Interaction across the Alps, in *Adaptation along Border Zones: Concepts, Strategies, Transformations*, https://www.ff.cuni.cz/event/adaptation-creativity-borderzones-concepts-strategies-transformations/
+
+**2022** CTHS, Aubervilliers, Cicolani, Huet, Zamboni : Centre et marges, une approche critique : modélisation des interactions entre entités culturelles en Italie du Nord à l’âge du Fer, paper in press, http://cths.fr/co/congres.php?id=174
 
 **2023** CAA, Amsterdam, ["From thesaurus to semantic network"](https://anr-itineris.github.io/itineris/talk/caa-2023/thesaurus/pres)
 
