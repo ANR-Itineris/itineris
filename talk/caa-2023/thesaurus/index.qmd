@@ -60,7 +60,7 @@ htmlwidgets::saveWidget(organisation, "C:/Rdev-itineris/itineris-anr/org/organis
 ::: {.notes}
 characterisation of Italic bronze craftsmanship in the Early Iron Age.
 With French, English and Italian, are the other official languages of this project.
-WP3 takes care of open-source data and tools to provide to the scientific community open access results, codes and data produced during the project as well as after their publication.
+WP3 takes care of open-source data and tools to provide to the scientific community open access results, codes and data produced during the project as well as after their publication.This specific WP is dedicated to cultural networks analysis, from the object to society, by statistical approaches to get numerical indexes and conventional threshold helping to recognise consistent patterns in the dataset. The patterns modeled by spatial and phylogenetic networks are clustering with community/similarity methods and leveraging network to explore both material culture (chaînes opératoires) and the socio-economic dimension of the Protohistoric societies. The main goal is to be able to automatically order and spatially orient such complex and heterogeneous data and try to set out a dynamic typology of nested networks and sub-networks as well as different scenarios of the cultural and economic interactions.
 :::
 
 
