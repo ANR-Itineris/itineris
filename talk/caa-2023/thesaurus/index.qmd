@@ -182,7 +182,7 @@ Hosted on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/
 ```
 
 ::: {.notes}
-DMP models including one in archaeology developed by the *Mémoires des Archéologues et des Sites Archéologiques* consortium
+DMP models including one in archaeology developed by the *Mémoires des Archéologues et des Sites Archéologiques* consortium. The DMP OPIDoR is an open tool to help write and implement data management plans or software in accordance with the FAIR principles of the ANR and the CNRS. We use a ANR model.
 :::
 
 
@@ -342,12 +342,20 @@ The aim is to store the RDF triples in ISIDORE, the largest scientific open data
 
 
 # Case study: <small><br>the *sanguisuga fibula* </small> 20475.01 {background-color="#f3e7b3"}
+Sanguisuga fibula with circular coral inlays and incised lines decoration. The pin and part of pin holder are broken. This kind of fibula, which combine copper alloy with coral, are typical of the female Giolasecca costume. They appear during the middle of the VI century B.C. and spread widely until the middle of the V century B.C.   This object come from the necropolis of Golasecca, de Mortillet collection, Musée d'Archéologie nationale de Saint-Germain-en-Laye.
+Measurements :
+Length in cm 4.1
+Width in cm 2.1
+Weight in gr 5.7
+
+Sampling sites: by perforation near the start of the pin on the underside of the fibula arch
 
 
 ## DB record
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/bd-20475.png' style="width: 900px;">
 
+The DBMS is a FileMaker server hosted in the Huma-Num structure for shared and restricted use among team members. This data structure will allow the durability of the storage and facilitate interfacing with research data already implemented by the scientific coordinator via Archeolocalis and the BaseFer database linked to AOROC Chronocarto web interface: http://www.chronocarto.eu/spip.php?article1&lang=fr. To increase the interoperability of the database, data and metadata will be transcribed on the fly by computer routines written in R and Python, with low-access (ODBC), or high-level access (SQL, GET).
 
 ## LIA sample
 
