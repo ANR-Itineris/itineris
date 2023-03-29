@@ -177,7 +177,7 @@ characterisation of Italic bronze craftsmanship in the Early Iron Age.
 
 ## Data Management Plan
 
-Hosted on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-opidor.png" style="height: 80px; vertical-align:middle"> <https://dmp.opidor.fr/plans>
+Hosted on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-opidor.png" style="height: 80px; vertical-align:middle"> <https://dmp.opidor.fr/public_plans>
 
 
 ```{=html}
