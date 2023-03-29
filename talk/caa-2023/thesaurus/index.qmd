@@ -29,11 +29,12 @@ format:
 library(plotly)
 library(kableExtra)
 ```
-
+Itineris (2021-2025) is an international project funded by the ANR (Research National).  Focused on north-Italic craft techniques, this project tries to understand who produces, transforms and consumes (gender approach, social/cultural layers and context analysis); how they do it (craft techniques, traditions, spatial and context analysis,) and finally why they do it (aesthetic, cultural, political reasons, symbolic systems social and economic modelling), by combining archaeometric, mathematical and computer modelling methods with social and archaeological approaches. By addressing these crucial questions, this project will offer a deep and critical review of the traditional markers and approaches already applied to the identification of human past mobility.
 
 ## Partners
-
-
+Team: 16 permanent members, 3 French laboratories, 4 Italian research departments and 3 Museums
+{.notes}
+The project involves 16 permanent members highly qualified coming from 3 French laboratories, 4 Italian University departments and 3 Museums. Master and PHD students are also included. The project is organised in three specific work-packages, based on the scheduled progression of scientific analysis from the Archaeometric , archaeological and technological analysis to the data modelling (WP3)
 ```{r}
 #| eval: false
 data.base <- "https://raw.githubusercontent.com/ANR-Itineris/itineris/main/data/"
