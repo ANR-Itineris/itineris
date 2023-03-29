@@ -11,6 +11,8 @@ Development of an R package for data vizualisation and statistics, [itineRis](ht
 
 **2016** CTHS, Pau https://zoometh.github.io/golasecca/
 
+**2021** Praga, Cicolani, Zamboni & Huet 2021 : Between Celtic, Italic and Etruscan worlds. Re-thinking Boundaries and Models of Interaction across the Alps, in Peter Pavúk, Ladislav Stančo, Jan Kysela, Marek Verčík, Helena Tůmová, Adaptation along Border Zones: Concepts, Strategies, Transformations, international congress, Institute of Classical Archaeology, Charles University, 31.5-3.6 2021, Praga
+
 **2023** CAA, Amsterdam, ["From thesaurus to semantic network"](https://anr-itineris.github.io/itineris/talk/caa-2023/thesaurus/pres)
 
 ## Workpackages & Tasks
