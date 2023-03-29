@@ -72,7 +72,10 @@ WP3 takes care of open-source data and tools to provide to the scientific commun
 ### Archaeological Context
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture.png' style="width: 900px;">
-
+::: {.notes}
+Because the project focusing on north-Italian craft techniques, the archaeological context 
+belonging to 3 different but linked cultural areas: Golasecca culture (north-eastern part of Piedmont), whose productions spread across the Alps in the Celtic area during the first iron age, Ligurians (Southern Piedmont) and indigenous communities living in the Etruscan area (Western Emilia). This part of northern Italy has been targeted by recent researches, publications and excavations while providing a renewed dataset and cultural framework to overcome the traditional archaeological approaches. Thanks to their good preservation, these artefacts and sites are a golden opportunity to produce an new investigation of Protohistoric metal crafting, and, taking an overview of the management of metal workshops by North Italic communities and their interactions with the Celtic world in
+:::
 
 ### Items
 
