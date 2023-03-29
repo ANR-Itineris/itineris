@@ -441,7 +441,7 @@ Metadata
 
 * <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 80px;vertical-align: middle;'> <https://github.com/zoometh/itineRis> 
 
-* <https://itineris.huma-num.fr/>
+* <img src= 'https://github.com/ANR-Itineris/itineris/blob/main/www/logo.png' style='height: 80px;vertical-align: middle;'> <https://itineris.huma-num.fr/>
 
 \
 
