@@ -118,7 +118,7 @@ Settlements from tree cultural areas and one Golasecca cemetery
 In order to better understand the practices and techniques of the artisans, the settlements especially those with a well-documented artisanal activity are highlighted, and distributed among the three cultural entities. The sites are characterized by local production and the integration of foreign models and styles and share a common clothing fashion. Located along the main natural communication paths, they are also privileged intermediaries of the medium and long-distance trade, both internal and external to the peninsula
 :::
 
-### Modeling
+### Modeling social & cultural interactions
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/gol-italic-culture.png' style="width: 900px;">
 
@@ -195,6 +195,9 @@ DMP models including one in archaeology developed by the *Mémoires des Archéol
 Hosted on FileMaker v19.1 <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-filemaker19.png" style="height: 80px; vertical-align:middle">
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/bd-voc.png' style="width: 900px;">
+::: {.notes}
+The Database is builded to record, process and archive the data during the project life as well as make it interoperable with the web collections of the coordinator’s laboratory (Atals de l’Age du Fer hosted in Chronocarto hub. Using Huma-Num ShareDocs and GitLab and GitHub repositories, will allow to permanently spread and share both data and codes leveraging the GIT version control system to track the development of the project. 
+:::
 
 ### Git
 
