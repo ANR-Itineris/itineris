@@ -112,7 +112,7 @@ As cultural and social markers these items are a good ways to :
 :::
 
 ### Sites
-Settlements from tree cultural areas and one Golasecca cemetery 
+Settlements from 3 cultural areas and one Golasecca cemetery 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture-items.png' style="width: 900px;">
 ::: {.notes}
 In order to better understand the practices and techniques of the artisans, the settlements especially those with a well-documented artisanal activity are highlighted, and distributed among the three cultural entities. The sites are characterized by local production and the integration of foreign models and styles and share a common clothing fashion. Located along the main natural communication paths, they are also privileged intermediaries of the medium and long-distance trade, both internal and external to the peninsula
@@ -360,6 +360,14 @@ Sampling sites: by perforation near the start of the pin on the underside of the
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/bd-20475.png' style="width: 900px;">
 
 The DBMS is a FileMaker server hosted in the Huma-Num structure for shared and restricted use among team members. This data structure will allow the durability of the storage and facilitate interfacing with research data already implemented by the scientific coordinator via Archeolocalis and the BaseFer database linked to AOROC Chronocarto web interface: http://www.chronocarto.eu/spip.php?article1&lang=fr. To increase the interoperability of the database, data and metadata will be transcribed on the fly by computer routines written in R and Python, with low-access (ODBC), or high-level access (SQL, GET).
+
+Chronocarto
+Atlas : https://www.chronocarto.eu/spip.php?article1
+
+Ref. biblio on-line : https://journals.openedition.org/mefra/9916
+
+Archeolocalis lien vers Golasecca interactif: https://archeolocalis.chronocarto.eu/index.php?zadm1=IT&zadm1bis=ITC&zadm2=ITC4&zadm3=ITC41&zmotif=Golasecca&za=l4nom&zt=tl&zvalid2=Chercher
+
 
 ## LIA sample
 
