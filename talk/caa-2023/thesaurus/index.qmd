@@ -29,12 +29,13 @@ format:
 library(plotly)
 library(kableExtra)
 ```
+
+::: {.notes}
 Itineris (2021-2025) is an international project funded by the ANR (Research National).  Focused on north-Italic craft techniques, this project tries to understand who produces, transforms and consumes (gender approach, social/cultural layers and context analysis); how they do it (craft techniques, traditions, spatial and context analysis,) and finally why they do it (aesthetic, cultural, political reasons, symbolic systems social and economic modelling), by combining archaeometric, mathematical and computer modelling methods with social and archaeological approaches. By addressing these crucial questions, this project will offer a deep and critical review of the traditional markers and approaches already applied to the identification of human past mobility.
+:::
 
 ## Partners
-**Team: 16 permanent members, 3 French laboratories, 4 Italian research departments and 3 Museums**
-{.notes}
-The project involves 16 permanent members highly qualified coming from 3 French laboratories, 4 Italian University departments and 3 Museums. Master and PHD students are also included. The project is organised in three specific work-packages, based on the scheduled progression of scientific analysis from the Archaeometric , archaeological and technological analysis to the data modelling (WP3)
+
 ```{r}
 #| eval: false
 data.base <- "https://raw.githubusercontent.com/ANR-Itineris/itineris/main/data/"
@@ -57,7 +58,12 @@ htmlwidgets::saveWidget(organisation, "C:/Rdev-itineris/itineris-anr/org/organis
 <iframe width="1200" height="500" src="https://anr-itineris.github.io/itineris/org/organisation"></iframe>
 ```
 
+<div class="captiontext">Team: 16 permanent members, 3 French laboratories, 4 Italian research departments and 3 Museums</div>
+
+\
+
 ::: {.notes}
+The project involves 16 permanent members highly qualified coming from 3 French laboratories, 4 Italian University departments and 3 Museums. Master and PHD students are also included. The project is organised in three specific work-packages, based on the scheduled progression of scientific analysis from the Archaeometric , archaeological and technological analysis to the data modelling (WP3)
 
 WP3 takes care of open-source data and tools to provide open access results, codes and data produced during the project as well as after their publication.This specific WP is dedicated to cultural networks analysis, from the object to society, by statistical approaches to get numerical indexes and conventional threshold helping to recognise consistent patterns in the dataset. The patterns modeled by spatial and phylogenetic networks are clustering with community/similarity methods and leveraging network to explore both material culture (chaînes opératoires) and the socio-economic dimension of the Protohistoric societies. The main goal is to be able to automatically order and spatially orient such complex and heterogeneous data and try to set out a dynamic typology of nested networks and sub-networks as well as different scenarios of the cultural and economic interactions. characterisation of Italic bronze craftsmanship in the Early Iron Age.
 With French, English and Italian, are the other official languages of this project.
@@ -71,16 +77,15 @@ With French, English and Italian, are the other official languages of this proje
 
 ### Archaeological Context
 
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture.png' style="width: 900px;">
-**3 different but linked cultural areas: Golasecca, Ligurians and Western Emilia**
-::: {.notes}
-Because the project focusing on north-Italian craft techniques, the archaeological context 
-belonging to 3 different but linked cultural areas: Golasecca culture (north-eastern part of Piedmont), whose productions spread across the Alps in the Celtic area during the first iron age, Ligurians (Southern Piedmont) and indigenous communities living in the Etruscan area (Western Emilia). This part of northern Italy has been targeted by recent researches, publications and excavations while providing a renewed dataset and cultural framework to overcome the traditional archaeological approaches. Thanks to their good preservation, these artefacts and sites are a golden opportunity to produce an new investigation of Protohistoric metal crafting, and, taking an overview of the management of metal workshops by North Italic communities and their interactions with the Celtic world in
-:::
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture.png' style="width: 900px;"><div class="captiontext">3 different but linked cultural areas: Golasecca, Ligurians and Western Emilia</div>
+
+\
+
 
 ### Dataset
-**1200 items made in copper alloys held in 3 different museums from 6 archaeological sites**
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-items.png' style="width: 900px;">
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-items.png' style="width: 900px;"><div class="captiontext">1200 items made in copper alloys held in 3 different museums from 6 archaeological sites</div>
+
 
 <table>
 <tbody>
@@ -103,36 +108,47 @@ belonging to 3 different but linked cultural areas: Golasecca culture (north-eas
 </tbody>
 </table>
 
-::: {.notes}
-The dataset involve 1200 items made in copper alloys held in 3 different museums. This set is mostly composed of fibulae and clothing items covering a chronological range from the 7th to the end of the 5th century BC and belonging to the three cultural areas investigated. 
-As cultural and social markers these items are a good ways to :
-1 to identify the craft practices of copper alloy in Northern Italy (alloy/trace composition, isotopic origin, metallographic features)
-2 establish the social and cultural impact of foreign metal finds and/or technological innovations in indigenous contexts 
-3 rethink Protohistoric networks by modelling the data at different scales from the micro one (objects) to the social dimension.
-:::
+\
+
 
 ### Sites
-Settlements from 3 cultural areas and one Golasecca cemetery 
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture-items.png' style="width: 900px;">
+
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture-items.png' style="width: 900px;"><div class="captiontext">Settlements from 3 cultural areas and one Golasecca cemetery </div>
+
+\
+
+
+### Analsysis
+
+Modeling social & cultural interactions
+
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/gol-italic-culture.png' style="width: 900px;"><div class="captiontext">Community detection of ...</div>
+
+:::
+
+
 ::: {.notes}
-In order to better understand the practices and techniques of the artisans, the settlements especially those with a well-documented artisanal activity are highlighted, and distributed among the three cultural entities. The sites are characterized by local production and the integration of foreign models and styles and share a common clothing fashion. Located along the main natural communication paths, they are also privileged intermediaries of the medium and long-distance trade, both internal and external to the peninsula
+1. Because the project focusing on north-Italian craft techniques, the archaeological context 
+belonging to 3 different but linked cultural areas: Golasecca culture (north-eastern part of Piedmont), whose productions spread across the Alps in the Celtic area during the first iron age, Ligurians (Southern Piedmont) and indigenous communities living in the Etruscan area (Western Emilia). This part of northern Italy has been targeted by recent researches, publications and excavations while providing a renewed dataset and cultural framework to overcome the traditional archaeological approaches. Thanks to their good preservation, these artefacts and sites are a golden opportunity to produce an new investigation of Protohistoric metal crafting, and, taking an overview of the management of metal workshops by North Italic communities and their interactions with the Celtic world in  
+
+2. The dataset involve 1200 items made in copper alloys held in 3 different museums. This set is mostly composed of fibulae and clothing items covering a chronological range from the 7th to the end of the 5th century BC and belonging to the three cultural areas investigated. 
+As cultural and social markers these items are a good ways to :
+* to identify the craft practices of copper alloy in Northern Italy (alloy/trace composition, isotopic origin, metallographic features)
+* establish the social and cultural impact of foreign metal finds and/or technological innovations in indigenous contexts 
+* rethink Protohistoric networks by modelling the data at different scales from the micro one (objects) to the social dimension.  
+
+3. In order to better understand the practices and techniques of the artisans, the settlements especially those with a well-documented artisanal activity are highlighted, and distributed among the three cultural entities. The sites are characterized by local production and the integration of foreign models and styles and share a common clothing fashion. Located along the main natural communication paths, they are also privileged intermediaries of the medium and long-distance trade, both internal and external to the peninsula
 :::
 
 ## References
-Talk: Cicolani, Zamboni & Huet 2021 : Between Celtic, Italic and Etruscan worlds. Re-thinking Boundaries and Models of Interaction across the Alps, in Peter Pavúk, Ladislav Stančo, Jan Kysela, Marek Verčík, Helena Tůmová, Adaptation along Border Zones: Concepts, Strategies, Transformations, international congress, Institute of of Classical Archaeology, Charles University, 31.5-3.6 2021, Praga
 
-Talk: Cicolani, Huet, Zamboni (in press) : Centre et marges, une approche critique : modélisation des interactions entre entités culturelles en Italie du Nord à l’âge du Fer, 146eme colloque CTHS, Périphéries, Session Préhistoire-Protohistoire, 4-7 mai 2022, Aubervilliers.
+* Talks:
 
-### Modeling social & cultural interactions
+  - Cicolani, Zamboni & Huet 2021 : Between Celtic, Italic and Etruscan worlds. Re-thinking Boundaries and Models of Interaction across the Alps, in Peter Pavúk, Ladislav Stančo, Jan Kysela, Marek Verčík, Helena Tůmová, Adaptation along Border Zones: Concepts, Strategies, Transformations, international congress, Institute of of Classical Archaeology, Charles University, 31.5-3.6 2021, Praga  
 
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/gol-italic-culture.png' style="width: 900px;">
+  - Cicolani, Huet, Zamboni (in press) : Centre et marges, une approche critique : modélisation des interactions entre entités culturelles en Italie du Nord à l’âge du Fer, 146eme colloque CTHS, Périphéries, Session Préhistoire-Protohistoire, 4-7 mai 2022, Aubervilliers.
 
-:::
-
-::: {.notes}
-rdflib to manage RDF (RDF/XML)
-RODBC to connect FM
-:::
 
 
 ## Interactivity: previous works
@@ -142,7 +158,7 @@ RODBC to connect FM
 ### Items
 
 ```{=html}
-<iframe width="1200" height="700" src="https://zoometh.github.io/golasecca/img/map_GIC_IIAB.html"></iframe>
+<iframe width="1200" height="500" src="https://zoometh.github.io/golasecca/img/graph_GIC_IIAB.html"></iframe>
 ```
 
 ### Sites
@@ -177,7 +193,7 @@ characterisation of Italic bronze craftsmanship in the Early Iron Age.
 
 ## Data Management Plan
 
-Hosted on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-opidor.png" style="height: 80px; vertical-align:middle"> <https://dmp.opidor.fr/public_plans>
+Hosted on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-opidor.png" style="height: 60px; vertical-align:middle"> <https://dmp.opidor.fr/public_plans>
 
 
 ```{=html}
@@ -195,12 +211,10 @@ DMP models including one in archaeology developed by the *Mémoires des Archéol
 
 ### Database
 
-Hosted on FileMaker v19.1  <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-filemaker19.png" style="height: 80px; vertical-align:middle"> and linked to Chronocarto hub via Archeolocalis: https://journals.openedition.org/mefra/9916
+Hosted on FileMaker v19.1  <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-filemaker19.png" style="height: 50px; vertical-align:middle"> and linked to Chronocarto hub via Archeolocalis: <https://journals.openedition.org/mefra/9916>
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/bd-voc.png' style="width: 900px;">
-::: {.notes}
-The Database is builded to record, process and archive the data during the project life as well as make it interoperable with the web collections of the coordinator’s laboratory (Atals de l’Age du Fer hosted in Chronocarto hub. Using Huma-Num ShareDocs and GitLab and GitHub repositories, will allow to permanently spread and share both data and codes leveraging the GIT version control system to track the development of the project. 
-:::
+
 
 ### Git
 
@@ -277,7 +291,11 @@ isotop_ternaryplot(df.isotop)
 
 :::
 
+
 ::: {.notes}
+The Database is builded to record, process and archive the data during the project life as well as make it interoperable with the web collections of the coordinator’s laboratory (Atals de l’Age du Fer hosted in Chronocarto hub. Using Huma-Num ShareDocs and GitLab and GitHub repositories, will allow to permanently spread and share both data and codes leveraging the GIT version control system to track the development of the project.
+rdflib to manage RDF (RDF/XML)
+RODBC to connect FM
 Reusability means **interactivity** and accessibility on the web. It also means reproductibility of results by sharing open datasets and functions
 :::
 
@@ -348,6 +366,7 @@ The aim is to store the RDF triples in ISIDORE, the largest scientific open data
 
 
 # Case study: <small><br>the *sanguisuga fibula* </small> 20475.01 {background-color="#f3e7b3"}
+
 ::: {.notes}
 Sanguisuga fibula with circular coral inlays and incised lines decoration. The pin and part of pin holder are broken. This kind of fibula, which combine copper alloy with coral, are typical of the female Giolasecca costume. They appear during the middle of the VI century B.C. and spread widely until the middle of the V century B.C.   This object come from the necropolis of Golasecca, de Mortillet collection, Musée d'Archéologie nationale de Saint-Germain-en-Laye.
 Measurements :
@@ -356,18 +375,20 @@ Width in cm 2.1
 Weight in gr 5.7
 
 Sampling sites: by perforation near the start of the pin on the underside of the fibula arch
+
 :::
 
 ## DB record
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/bd-20475.png' style="width: 900px;">
 
+::: {.notes}
 The DBMS is a FileMaker server hosted in the Huma-Num structure for shared and restricted use among team members. This data structure will allow the durability of the storage and facilitate interfacing with research data already implemented by the scientific coordinator via Archeolocalis and the BaseFer database linked to AOROC Chronocarto web interface: http://www.chronocarto.eu/spip.php?article1&lang=fr. To increase the interoperability of the database, data and metadata will be transcribed on the fly by computer routines written in R and Python, with low-access (ODBC), or high-level access (SQL, GET).
 
 Chronocarto
 Atlas : https://www.chronocarto.eu/spip.php?article1
 Archeolocalis lien vers Golasecca interactif: https://archeolocalis.chronocarto.eu/index.php?zadm1=IT&zadm1bis=ITC&zadm2=ITC4&zadm3=ITC41&zmotif=Golasecca&za=l4nom&zt=tl&zvalid2=Chercher
-
+:::
 
 ## LIA sample
 
@@ -381,7 +402,7 @@ kable(lia) %>%
 
 
 
-## 2D documentation
+## Iconography
 
 ::: {.panel-tabset}
 
@@ -394,16 +415,6 @@ kable(lia) %>%
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/20475.01 MAN.jpg' style="width: 1200px;">
 
 
-:::
-
-::: {.notes}
-Metadata
-:::
-
-## 3D documentation
-
-::: {.panel-tabset}
-
 ### Sketchfab
 
 
@@ -411,6 +422,7 @@ Metadata
 <iframe width="1200" height="700"  src="https://sketchfab.com/models/cf75955152a14ff6a6ab4d3f08968b6d/embed"> </iframe>
 ```
 J.B. Houal & B. Houal
+
 ### Local
 
 
@@ -421,6 +433,7 @@ J.B. Houal & B. Houal
 :::
 
 ::: {.notes}
+Metadata
 3DHOP
 :::
 
@@ -445,11 +458,11 @@ J.B. Houal & B. Houal
 \
 
 
-* <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 90px;vertical-align: middle;"> <https://github.com/ANR-Itineris>  
-
-* <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 80px;vertical-align: middle;'> <https://github.com/zoometh/itineRis> 
-
-* <img src= 'https://github.com/ANR-Itineris/itineris/blob/main/www/logo.png' style='height: 80px;vertical-align: middle;'> <https://itineris.huma-num.fr/>
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 90px;vertical-align: middle;"> <https://github.com/ANR-Itineris>  
+\
+<img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 80px;vertical-align: middle;'> <https://github.com/zoometh/itineRis> 
+\
+<img src= 'https://raw.githubusercontent.com/ANR-Itineris/itineris/master/www/logo.png' style='height: 80px;vertical-align: middle;'> <https://itineris.huma-num.fr/>
 
 \
 
