@@ -21,8 +21,8 @@ output:
 #   private_token = Sys.getenv("GITLAB_COM_TOKEN"))
 # url.root <- "https://raw.githubusercontent.com/zoometh/itineris/main/www/"
 # url.root <- "https://gitlab.huma-num.fr/thuet/itineris/-/blob/main/www/"
-url.root <- "C:/Rdev-itineris/itineris/www/"
-htmltools::img(src = paste0(url.root, "logo.png"), 
+url.root <- "C:/Rdev-itineris/itineris/www/img/"
+htmltools::img(src = paste0(url.root, "logo-itineris.png"), 
                alt = 'logo', 
                width = '250px',
                style = 'position:absolute; top:0; right:0; padding:10px;')
@@ -460,7 +460,7 @@ url.mbr_nodes.res <- paste0(data.base, 'mbr_nodes_resume.tsv')
 mbr_nodes.res <- read.table(url.mbr_nodes.res, header = T, sep = "\t", row.names = NULL)
 mbr_edges.res <- read.table(url.mbr_edges.res, header = T, sep = "\t", row.names = NULL)
 partners <- visNetwork::visNetwork(mbr_nodes.res, mbr_edges.res, 
-                                   width = "900px", height = "900px") %>%
+                                   width = "1100px", height = "1100px") %>%
   visNetwork::visEdges(shadow = TRUE,
                        smooth = TRUE,
                        arrows =list(to = list(enabled = TRUE, 
