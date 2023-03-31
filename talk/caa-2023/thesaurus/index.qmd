@@ -18,12 +18,12 @@ format:
     reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/ANR-Itineris/itineris/master/www/logo.png
-    footer: "<em>From thesaurus to semantic network</em> <img src='https://raw.githubusercontent.com/ANR-Itineris/itineris/master/www/logo.png' style='height: 40px;vertical-align: middle;'> <https://github.com/ANR-Itineris/itineris>  CAA23, Amsterdam, 2023"
+    footer: "<em>From thesaurus to semantic network</em> <img src='https://raw.githubusercontent.com/ANR-Itineris/itineris/master/www/img/logo-itineris.png' style='height: 40px;vertical-align: middle;'> <https://github.com/ANR-Itineris/itineris>  CAA23, Amsterdam, 2023"
     margin: 0
     width: 1200
 ---
 
-# ANRJCJC Itineris {background-color="#f3e7b3"}
+# ANRJCJC Itineris <img src='https://raw.githubusercontent.com/ANR-Itineris/itineris/master/www/img/logo-anr.png' style='height: 40px;vertical-align: middle;'> {background-color="#f3e7b3"}
 
 ```{r, echo=FALSE}
 library(plotly)
