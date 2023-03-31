@@ -114,7 +114,7 @@ With French, English and Italian, are the other official languages of this proje
 ### Sites
 
 
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture-items.png' style="width: 900px;"><div class="captiontext">Settlements from 3 cultural areas and one Golasecca cemetery </div>
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/arch-culture-items.png' style="width: 800px;"><div class="captiontext">Settlements from 3 cultural areas and one Golasecca cemetery </div>
 
 \
 
@@ -124,6 +124,8 @@ With French, English and Italian, are the other official languages of this proje
 Modeling social & cultural interactions
 
 <img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/gol-italic-culture.png' style="width: 900px;"><div class="captiontext">Community detection of ...</div>
+
+\
 
 :::
 
