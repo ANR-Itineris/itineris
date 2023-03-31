@@ -316,6 +316,7 @@ RODBC to connect FM
 
 ## Aims
 
+<http://www.chronocarto.eu/spip.php?article27&lang=fr>
 
 ```{=html}
 <iframe width="1200" height="600" src="http://www.chronocarto.eu/spip.php?article27&lang=fr"></iframe>
