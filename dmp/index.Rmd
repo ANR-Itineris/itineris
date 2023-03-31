@@ -466,7 +466,8 @@ partners <- visNetwork::visNetwork(mbr_nodes.res, mbr_edges.res,
                        arrows =list(to = list(enabled = TRUE, 
                                               scaleFactor = 1)),
                        color = list(color = "lightblue", highlight = "red"))
-htmlwidgets::saveWidget(partners, "C:/Rdev-itineris/itineris-anr/org/organisation.html")
+partners
+#htmlwidgets::saveWidget(partners, "C:/Rdev-itineris/itineris-anr/org/organisation.html")
 ```
 
 
