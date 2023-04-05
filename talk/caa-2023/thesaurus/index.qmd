@@ -460,7 +460,6 @@ Metadata
 The ANR Itineris project was designed from the beginning in an open source and LOD approach in order to make the data reusable and provide an open access to results, codes and data produced during the project as well as after their publication. The Itineris microthesaurus on italic ornaments accessible via skos is a first step towards the development of an ontology based on typology and the development of a controlled and standardized language. In the future, this ontology will allow a wider dissemination of information thanks to the possible alignments with other ontologies and thesauri existing or in progress on protohistoric ornaments in Europe.
 :::
 
-Translated with www.DeepL.com/Translator (free version)
 
 ## Contact
 
