@@ -140,7 +140,9 @@ As cultural and social markers these items are a good ways to :
 * establish the social and cultural impact of foreign metal finds and/or technological innovations in indigenous contexts 
 * rethink Protohistoric networks by modelling the data at different scales from the micro one (objects) to the social dimension.  
 
-3. In order to better understand the practices and techniques of the artisans, the settlements especially those with a well-documented artisanal activity are highlighted, and distributed among the three cultural entities. The sites are characterized by local production and the integration of foreign models and styles and share a common clothing fashion. Located along the main natural communication paths, they are also privileged intermediaries of the medium and long-distance trade, both internal and external to the peninsula
+3. In order to better understand the practices and techniques of the artisans, the settlements especially those with a well-documented artisanal activity are highlighted, and distributed among the three cultural entities. The sites are characterized by local production and the integration of foreign models and styles and share a common clothing fashion. Located along the main natural communication paths, they are also privileged intermediaries of the medium and long-distance trade, both internal and external to the peninsula.
+
+4. The modeling of interactions between sites sharing common productions has been recently presented.  To detect the cultural proximity between these communities, we used the community edges betweenness algorithm based on an ordered suppression of the edges appearing on the shortest paths. This allowed us to highlight the existence of intra-site links operating at different scales and based on the sharing of specific types of objects, not perceived before.
 :::
 
 ## References
