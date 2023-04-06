@@ -123,7 +123,7 @@ With French, English and Italian, are the other official languages of this proje
 
 Modeling social & cultural interactions
 
-<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/gol-italic-culture.png' style="width: 900px;"><div class="captiontext">Community detection of ...</div>
+<img src='https://raw.githubusercontent.com/anr-itineris/itineris/master/www/img/gol-italic-culture.png' style="width: 900px;"><div class="captiontext">Community detection for the phase 1: 560-525 BC (GIIAB/GIIB) </div>
 
 \
 
@@ -358,25 +358,19 @@ vocabularies must be linked to the BaseFer DB (AOROC) and formalised the locatio
 ::: {.notes}
 Opentheso is a multilingual, multi-paradigm thesaurus manager. Created in 2005. It supports poly-hierarchies in accordance with ISO25964 (25964-1 and 25964-2) Bibracte has shown that the ISO standard 25964 for the management of thesauri is sufficiently flexible to describe the different "points of view" presiding over the elaboration of the specialised and evolving "micro-languages" of archaeologists.
 ~ 500 concepts related to protohistoric adornment and metallurgical technologies. 
-* "fibule *a sanguisuga*"
- - **alternative label**: "Bogenfibel"
- - **associated concept** The wording is associated with "culture de Golasecca" and "féminin", because these fibulae are the "prerogative of feminine clothing and characterise the burials of Golasecca women".
- - **references**: "Cicolani 2017" points to the record of the indexed catalogue Frantiq (physical location); "Cicolani (V.)" refers to Veronica's IdRef (~ authors) record and "Passeurs des Alpes..." allows, when it exists, to provide a link to the online documentary resource (Cairn).
+* "fibule *a sanguisuga*"  
+
+ - **alternative label**: "Bogenfibel"  
+ 
+ - **associated concept** The wording is associated with "culture de Golasecca" and "féminin", because these fibulae are the "prerogative of feminine clothing and characterise the burials of Golasecca women".  
+ 
+ - **references**: "Cicolani 2017" points to the record of the indexed catalogue Frantiq (physical location); "Cicolani (V.)" refers to Veronica's IdRef (~ authors) record and "Passeurs des Alpes..." allows, when it exists, to provide a link to the online documentary resource (Cairn).  
+ 
  - **iconography** external resource directly downloadable from a perennial Nakala repository, one can reach iconographic documents. The conditions for sharing and reuse are specified in the metadata.
  Ark
 :::
 
-## RDF triple-store
 
-To be hosted on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/lod-humanum-isidore.png" style="height: 80px; vertical-align:middle"> <https://isidore.science/>
-
-```{=html}
-<iframe width="1200" height="700" src="https://isidore.science/"></iframe>
-```
-
-::: {.notes}
-The aim is to store the RDF triples in ISIDORE, the largest scientific open data project/platform in France with over 3,000 data sources
-:::
 
 
 # Case study: <small><br>the *sanguisuga fibula* </small> 20475.01 {background-color="#f3e7b3"}
@@ -455,8 +449,27 @@ Metadata
 # Conclusion {background-color="#f3e7b3"}
 
 
-## From thesaurus to semantic network
+## Next steps
+
+**Ark identifiers**
+
+Register data with URI in the form of Archival Resource Keys (ARKs) <https://arks.org/>
+
+```{=html}
+<iframe width="1200" height="300" src="https://arks.org/"></iframe>
+```
+
+**RDF triple-store**
+
+Host on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/lod-humanum-isidore.png" style="height: 80px; vertical-align:middle"> <https://isidore.science/>
+
+```{=html}
+<iframe width="1200" height="300" src="https://isidore.science/"></iframe>
+```
+
+
 ::: {.notes}
+The aim is to store the RDF triples in ISIDORE, the largest scientific open data project/platform in France with over 3,000 data sources
 The ANR Itineris project was designed from the beginning in an open source and LOD approach in order to make the data reusable and provide an open access to results, codes and data produced during the project as well as after their publication. The Itineris microthesaurus on italic ornaments accessible via skos is a first step towards the development of an ontology based on typology and the development of a controlled and standardized language. In the future, this ontology will allow a wider dissemination of information thanks to the possible alignments with other ontologies and thesauri existing or in progress on protohistoric ornaments in Europe.
 :::
 
@@ -464,19 +477,10 @@ The ANR Itineris project was designed from the beginning in an open source and L
 ## Contact
 
 \
-
-<center>
-
-<span style="font-size: 70px;">Thank you </span>
-
-</center>
-
-\
 <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;"> <https://github.com/ANR-Itineris>  
 \
 <img src='https://raw.githubusercontent.com/zoometh/itineRis/main/results/logo.png' style='height: 80px;vertical-align: middle;'> <https://github.com/zoometh/itineRis> 
 \
 <img src= 'https://raw.githubusercontent.com/ANR-Itineris/itineris/master/www/logo.png' style='height: 80px;vertical-align: middle;'> <https://itineris.huma-num.fr/>
-
 \
 
