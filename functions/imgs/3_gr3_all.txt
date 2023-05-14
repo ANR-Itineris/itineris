@@ -1,0 +1,2 @@
+"x"
+"Sites (cercles gris): AST: La Torretta; BISM: Bismantova; BOL: Felsina; BRGF: Brignano Frascata; BSVF: Forcello; CDA: Castello di Annone; COSB: Cossano Belbo; GRSP: S. Spirito; RESP: San Polo; ROGR: Rocca Grimalda; VdF: Villa del Foro. Objets (carrés rouges): Fib: Fibulae; Pdt: Pendant. Types (triangles oranges): FibH: Hallstatt shape; PdtB: Basket shape; SanCo: Sanguisuga with inlaid decoration; SanId: Sanguisuga with incised decoration. Styles (étoiles jaunes): GOL: Golasecca; HAL: Hallstatt; SPD: Piémont méridional"
