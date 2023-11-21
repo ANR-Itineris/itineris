@@ -18,6 +18,8 @@ Development of an R package for data vizualisation and statistics, [itineRis](ht
 
 **2023** CAA, Amsterdam, ["From thesaurus to semantic network"](https://anr-itineris.github.io/itineris/talk/caa-2023/thesaurus/pres)
 
+**2023** GMPCA, Nice,[" Modelling ancient bronze craft techniques in Italy. From ore to object and back"](https://hal.science/hal-04084724/document)
+
 ## Workpackages & Tasks
 
 * **WP1**: Identify craft practicies. Archaeometric analysis
